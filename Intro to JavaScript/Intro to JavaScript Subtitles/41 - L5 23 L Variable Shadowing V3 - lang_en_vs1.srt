@@ -1,0 +1,150 @@
+1
+00:00:00,480 --> 00:00:01,810
+Scope can be a tricky subject,
+
+2
+00:00:01,810 --> 00:00:05,030
+especially when you're bouncing
+between global and function scope.
+
+3
+00:00:05,030 --> 00:00:08,870
+One of the gotchas scope can result
+in is called scope overriding, or
+
+4
+00:00:08,870 --> 00:00:09,860
+shadowing.
+
+5
+00:00:09,860 --> 00:00:10,840
+To show you how this works and
+
+6
+00:00:10,840 --> 00:00:14,200
+how you can avoid it, let's take
+a look at the following code example.
+
+7
+00:00:14,200 --> 00:00:17,450
+Here we have the same variable
+bookTitle being assigned values
+
+8
+00:00:17,450 --> 00:00:19,170
+in two different scopes.
+
+9
+00:00:19,170 --> 00:00:23,290
+The bookTitle in the global scope is
+assigned the value Le Petit Prince, and
+
+10
+00:00:23,290 --> 00:00:27,200
+the book title in this function scope is
+assigned the value The Little Prince.
+
+11
+00:00:28,280 --> 00:00:33,170
+If we print out the value of bookTitle
+at each part of this program you'll see
+
+12
+00:00:33,170 --> 00:00:37,930
+that in the final console.log statement
+that The Little Prince is printed out.
+
+13
+00:00:37,930 --> 00:00:40,470
+However, at this point in the code
+
+14
+00:00:40,470 --> 00:00:45,100
+we're no longer in the function scope
+of the displayBookEnglish function.
+
+15
+00:00:45,100 --> 00:00:50,630
+So why is the book title Le Petit Prince
+not being printed instead?
+
+16
+00:00:50,630 --> 00:00:55,270
+Well, this is a classic case of
+scope overriding or shadowing.
+
+17
+00:00:55,270 --> 00:00:58,500
+When we reach the fifth line of
+this code the book title variable
+
+18
+00:00:58,500 --> 00:01:01,690
+from the global scope is actually
+being reassigned with the value
+
+19
+00:01:01,690 --> 00:01:03,250
+The Little Prince.
+
+20
+00:01:03,250 --> 00:01:08,880
+So the book title here is being
+reassigned by the book title here.
+
+21
+00:01:08,880 --> 00:01:12,494
+That means when we finally reach
+the last console.log in this code,
+
+22
+00:01:12,494 --> 00:01:16,320
+bookTitle in the global
+scope has been changed
+
+23
+00:01:16,320 --> 00:01:18,490
+even though we exited
+the function scope.
+
+24
+00:01:18,490 --> 00:01:22,270
+To prevent this from happening, we are
+going to simply declare a new variable
+
+25
+00:01:22,270 --> 00:01:25,060
+inside the displayBookEnglish function.
+
+26
+00:01:25,060 --> 00:01:27,007
+So instead of reassigning bookTitle,
+
+27
+00:01:27,007 --> 00:01:29,192
+we're going to create
+a different variable.
+
+28
+00:01:29,192 --> 00:01:33,580
+So now we've got a variable
+inside displayBookEnglish that is
+
+29
+00:01:33,580 --> 00:01:36,550
+relative at this function scope.
+
+30
+00:01:36,550 --> 00:01:42,010
+And our bookTitle that's declared in
+the global scope will remain unchanged.
+
+31
+00:01:42,010 --> 00:01:45,470
+And that way, when we reach the tenth
+line in our code and we print it out for
+
+32
+00:01:45,470 --> 00:01:48,850
+the third time, it's going to print
+out what we expect, Le Petit Prince.

@@ -1,0 +1,172 @@
+1
+00:00:00,298 --> 00:00:02,719
+Remember how I said loops could
+be used to count to a million?
+
+2
+00:00:03,750 --> 00:00:05,520
+Well, we're not going to do that.
+
+3
+00:00:05,520 --> 00:00:10,302
+We're going to count to 10,000 instead,
+starting with x equals 1.
+
+4
+00:00:10,302 --> 00:00:13,680
+Hey look, we're already done,
+1 mississippi!
+
+5
+00:00:13,680 --> 00:00:15,590
+We're on our way to 10,000 already.
+
+6
+00:00:16,650 --> 00:00:19,981
+Just so you know,
+counting to 10,000 is a tough task, and
+
+7
+00:00:19,981 --> 00:00:24,150
+like many tough tasks,
+it's good to work on them incrementally.
+
+8
+00:00:24,150 --> 00:00:26,355
+Let's increase the value of x by 1.
+
+9
+00:00:27,510 --> 00:00:28,460
+This is awesome.
+
+10
+00:00:28,460 --> 00:00:31,220
+See, we're making progress.
+
+11
+00:00:31,220 --> 00:00:34,360
+In no time,
+we'll be all the way to 10,000.
+
+12
+00:00:34,360 --> 00:00:37,510
+Yay, look how far you've gotten.
+
+13
+00:00:37,510 --> 00:00:38,520
+Okay, let's keep going.
+
+14
+00:00:40,530 --> 00:00:41,490
+Hey, wait a minute!
+
+15
+00:00:42,540 --> 00:00:45,141
+This is all the same code.
+
+16
+00:00:45,141 --> 00:00:48,011
+So repeating the same code over and
+over and
+
+17
+00:00:48,011 --> 00:00:52,232
+over again is definitely not going
+to be the best option for us,
+
+18
+00:00:52,232 --> 00:00:56,800
+if we want to print out all
+the numbers between 1 and 10,000.
+
+19
+00:00:56,800 --> 00:00:59,230
+There has to be a better way.
+
+20
+00:00:59,230 --> 00:01:00,620
+And you know what?
+
+21
+00:01:00,620 --> 00:01:03,942
+There is a better way, loops.
+
+22
+00:01:03,942 --> 00:01:06,612
+Using a loop will let you
+iterate over values and
+
+23
+00:01:06,612 --> 00:01:09,120
+repeatedly run a block of code.
+
+24
+00:01:09,120 --> 00:01:12,190
+In this case,
+the block of code you want to repeat, is
+
+25
+00:01:12,190 --> 00:01:16,556
+incriminating the value of x and using
+console.log to print out the message.
+
+26
+00:01:17,750 --> 00:01:22,430
+The only piece you really need to
+start your loop is right here but
+
+27
+00:01:22,430 --> 00:01:23,460
+we'll need to tweak it a bit.
+
+28
+00:01:24,660 --> 00:01:28,070
+Now, this code shows x
+starting at the value of 1,
+
+29
+00:01:28,070 --> 00:01:33,000
+and then it prints out the value of
+x and finally, x is incremented.
+
+30
+00:01:34,340 --> 00:01:39,353
+And because we want to do these two
+steps all the way until we reach 10,000,
+
+31
+00:01:39,353 --> 00:01:41,060
+we'll wrap that code in a loop.
+
+32
+00:01:42,380 --> 00:01:46,701
+This particular type of loop
+is called a while loop.
+
+33
+00:01:46,701 --> 00:01:49,283
+As long as this condition is true,
+
+34
+00:01:49,283 --> 00:01:54,372
+the loop will print out the number and
+increment the value of x by 1.
+
+35
+00:01:54,372 --> 00:01:57,371
+And then it will restart if
+the condition at the top of the loop is
+
+36
+00:01:57,371 --> 00:01:58,630
+still true.
+
+37
+00:01:58,630 --> 00:02:04,470
+So congratulations, in just five lines
+of code you can count to 10,000 and
+
+38
+00:02:04,470 --> 00:02:06,350
+pretty much any number
+you'd like to count to.

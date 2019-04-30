@@ -1,0 +1,126 @@
+1
+00:00:00,690 --> 00:00:03,065
+Let's take a moment to talk about scope.
+
+2
+00:00:03,065 --> 00:00:06,950
+Apart from regular syntax errors, scope
+will be at the heart of many coding bugs
+
+3
+00:00:06,950 --> 00:00:10,145
+you run into in pretty much
+any programming language.
+
+4
+00:00:10,145 --> 00:00:12,050
+When programmers talk about scope,
+
+5
+00:00:12,050 --> 00:00:16,219
+they're talking about the part of the
+program where a particular identifier,
+
+6
+00:00:16,219 --> 00:00:21,070
+such as a variable or a function name,
+is visible or accessible.
+
+7
+00:00:21,070 --> 00:00:25,470
+Trying to figure out if something
+is in scope can be tricky at first.
+
+8
+00:00:25,470 --> 00:00:26,740
+So let's start with an analogy.
+
+9
+00:00:28,370 --> 00:00:28,900
+&gt;&gt; Hey.
+
+10
+00:00:28,900 --> 00:00:29,480
+&gt;&gt; Hey.
+
+11
+00:00:29,480 --> 00:00:32,360
+&gt;&gt; Do you know where I can find
+the book Great Expectations?
+
+12
+00:00:32,360 --> 00:00:35,330
+&gt;&gt; Yeah, that's in the classic
+literature section, come follow me.
+
+13
+00:00:35,330 --> 00:00:35,730
+&gt;&gt; Perfect.
+
+14
+00:00:38,630 --> 00:00:41,890
+&gt;&gt; In the example you just saw,
+James was able to get information about
+
+15
+00:00:41,890 --> 00:00:45,890
+the book he wanted because he asked for
+the book while he was in the library.
+
+16
+00:00:45,890 --> 00:00:49,900
+You could say that the information
+about where the book was is in scope.
+
+17
+00:00:51,320 --> 00:00:54,730
+&gt;&gt; Hey, I'm looking for
+this book, Great Expectations.
+
+18
+00:00:54,730 --> 00:00:57,120
+Do you know where I could find it?
+
+19
+00:00:57,120 --> 00:00:58,482
+&gt;&gt; Yeah,
+I mean the library is right here.
+
+20
+00:00:58,482 --> 00:01:00,470
+[MUSIC]
+
+21
+00:01:00,470 --> 00:01:01,790
+I don't know why you're asking me.
+
+22
+00:01:02,860 --> 00:01:05,427
+&gt;&gt; Right, yeah, makes a lot of sense.
+
+23
+00:01:05,427 --> 00:01:08,066
+[MUSIC]
+
+24
+00:01:08,066 --> 00:01:09,361
+&gt;&gt; In the second example,
+
+25
+00:01:09,361 --> 00:01:12,989
+when James was outside the library,
+the information he wanted and
+
+26
+00:01:12,989 --> 00:01:17,940
+where he was requesting the information
+from, was no longer in the same scope.
+
+27
+00:01:17,940 --> 00:01:19,660
+So he couldn't find the book, and
+
+28
+00:01:19,660 --> 00:01:22,580
+he couldn't really ask anyone to give
+him information about how to find it.

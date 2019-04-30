@@ -1,0 +1,69 @@
+1
+00:00:00,000 --> 00:00:02,509
+Congratulations.
+
+2
+00:00:02,509 --> 00:00:06,195
+&gt;&gt; Congratulations on completing this
+introductory course on JavaScript.
+
+3
+00:00:06,195 --> 00:00:09,149
+From defining your first variables,
+to writing functions,
+
+4
+00:00:09,149 --> 00:00:12,055
+to creating your very own objects,
+you've come a long way.
+
+5
+00:00:12,055 --> 00:00:13,369
+&gt;&gt; In just a short amount of time,
+
+6
+00:00:13,369 --> 00:00:17,012
+you've built up a basic understanding of
+the JavaScript programming language, and
+
+7
+00:00:17,012 --> 00:00:19,750
+how it works
+&gt;&gt; If this is your first time learning
+
+8
+00:00:19,750 --> 00:00:22,270
+a programming language, you should
+be incredibly proud of yourself.
+
+9
+00:00:22,270 --> 00:00:24,117
+&gt;&gt; But the fun doesn't stop here.
+
+10
+00:00:24,117 --> 00:00:26,359
+Now, it's time for
+you to venture forth, and
+
+11
+00:00:26,359 --> 00:00:29,190
+use your new JavaScript powers
+to see what you can create.
+
+12
+00:00:29,190 --> 00:00:32,827
+We also hope you'll consider taking our
+follow-up course if you're interested in
+
+13
+00:00:32,827 --> 00:00:36,222
+learning how to use JavaScript to create
+interactive experiences on the web.
+
+14
+00:00:36,222 --> 00:00:37,350
+&gt;&gt; See you in the next course.
+
+15
+00:00:37,350 --> 00:00:47,350
+[MUSIC]

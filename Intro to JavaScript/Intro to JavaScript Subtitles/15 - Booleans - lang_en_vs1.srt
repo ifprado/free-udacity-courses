@@ -1,0 +1,62 @@
+1
+00:00:00,490 --> 00:00:03,150
+You've now seen how you can
+perform basic operations,
+
+2
+00:00:03,150 --> 00:00:06,390
+as well as comparisons on numbers and
+strings.
+
+3
+00:00:06,390 --> 00:00:07,850
+&gt;&gt; Whenever you compare data,
+
+4
+00:00:07,850 --> 00:00:11,640
+the result of the comparison will
+always be a value of true or false.
+
+5
+00:00:11,640 --> 00:00:14,650
+This is important because our
+third primitive data type,
+
+6
+00:00:14,650 --> 00:00:17,780
+Booleans, only includes
+these two values.
+
+7
+00:00:17,780 --> 00:00:23,410
+&gt;&gt; Just think, yes or no, on and
+off, true or false, ones and zeroes.
+
+8
+00:00:23,410 --> 00:00:25,740
+These are all values that really
+represent the same thing.
+
+9
+00:00:25,740 --> 00:00:31,100
+&gt;&gt; And this Boolean logic is a huge
+part of how we think about problems.
+
+10
+00:00:31,100 --> 00:00:32,000
+Code either runs or
+
+11
+00:00:32,000 --> 00:00:35,790
+it doesn't, there's no in-between,
+at least not in programming.
+
+12
+00:00:35,790 --> 00:00:39,360
+&gt;&gt; In this section, you'll dive deeper
+into Booleans by comparing data of
+
+13
+00:00:39,360 --> 00:00:42,550
+different types and learning about
+different ways to express equality.

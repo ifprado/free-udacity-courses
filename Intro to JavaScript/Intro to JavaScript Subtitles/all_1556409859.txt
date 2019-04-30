@@ -1,0 +1,7599 @@
+1
+00:00:00,580 --> 00:00:01,680
+Hi, I'm Julia.
+
+2
+00:00:01,680 --> 00:00:02,770
+&gt;&gt; And, I'm James.
+
+3
+00:00:02,770 --> 00:00:06,380
+&gt;&gt; We'll be your instructors for
+this introductory course on JavaScript.
+
+4
+00:00:06,380 --> 00:00:09,570
+JavaScript is a programming
+language created for the web.
+
+5
+00:00:09,570 --> 00:00:13,990
+If you're familiar with using HTML and
+CSS to create webpages, JavaScript is
+
+6
+00:00:13,990 --> 00:00:17,910
+the final piece that you'll need to
+really make your websites come to life.
+
+7
+00:00:17,910 --> 00:00:22,150
+&gt;&gt; Back in 1995, when Brandan Eich
+created a JavaScript, it was created to
+
+8
+00:00:22,150 --> 00:00:26,300
+make it easier to add interactive and
+dynamic elements to websites.
+
+9
+00:00:26,300 --> 00:00:30,050
+But today, JavaScript is use for
+all sorts of applications.
+
+10
+00:00:30,050 --> 00:00:32,960
+From programming a robot with
+our an Arduino to writing a game
+
+11
+00:00:32,960 --> 00:00:34,170
+script in Unity.
+
+12
+00:00:34,170 --> 00:00:37,490
+In fact, even some code editors
+were built with JavaScript.
+
+13
+00:00:37,490 --> 00:00:41,390
+The point is, the opportunities
+with JavaScript are endless.
+
+14
+00:00:41,390 --> 00:00:42,160
+&gt;&gt; In this course,
+
+15
+00:00:42,160 --> 00:00:45,400
+you'll learn about the foundations of
+the JavaScript programming language.
+
+16
+00:00:45,400 --> 00:00:46,100
+And along the way,
+
+17
+00:00:46,100 --> 00:00:50,170
+you'll familiarize yourself with the
+tools used by JavaScript programmers.
+
+18
+00:00:50,170 --> 00:00:52,851
+Finally, we want to make sure you get
+enough practice with the basics of
+
+19
+00:00:52,851 --> 00:00:53,441
+the language.
+
+20
+00:00:53,441 --> 00:00:56,837
+So between each section, you'll have
+access to the problem sets that
+
+21
+00:00:56,837 --> 00:00:59,450
+reinforce the topics we just learned.
+
+22
+00:00:59,450 --> 00:01:00,610
+&gt;&gt; Before we get started,
+
+23
+00:01:00,610 --> 00:01:03,747
+let's take a quick detour to talk
+a little bit about JavaScript's history.
+1
+00:00:00,480 --> 00:00:02,940
+Let's take a look at
+the string datatype.
+
+2
+00:00:02,940 --> 00:00:06,510
+You've actually used a string before,
+and maybe just didn't know it.
+
+3
+00:00:06,510 --> 00:00:09,150
+When you type a message
+inside console.log,
+
+4
+00:00:09,150 --> 00:00:11,510
+that message is actually
+just a JavaScript string.
+
+5
+00:00:13,000 --> 00:00:15,840
+So here, Hiya, Friend, is just a string.
+
+6
+00:00:17,140 --> 00:00:20,760
+Strings can be single letters,
+like the character h, or
+
+7
+00:00:20,760 --> 00:00:25,450
+even contain numbers,
+like the string 123.
+
+8
+00:00:25,450 --> 00:00:28,880
+The important thing is that you
+use quotes to signify a string.
+
+9
+00:00:28,880 --> 00:00:30,870
+It doesn't matter if
+the quotes are single or
+
+10
+00:00:30,870 --> 00:00:34,146
+double quotes, but
+they do have to match.
+
+11
+00:00:34,146 --> 00:00:37,930
+I used double quotes here and
+single quotes here.
+
+12
+00:00:39,100 --> 00:00:41,800
+If I try to pass the string
+to console.log but
+
+13
+00:00:41,800 --> 00:00:46,430
+forget to use the quotes,
+JavaScript will return back an error.
+
+14
+00:00:47,960 --> 00:00:51,400
+I get this reference error, because
+the JavaScript engine thinks I'm talking
+
+15
+00:00:51,400 --> 00:00:55,830
+about a variable called hello instead
+of a string with the value of hello.
+
+16
+00:00:57,000 --> 00:01:01,272
+We haven't talked about variables just
+yet, but the moral of the story here
+
+17
+00:01:01,272 --> 00:01:04,022
+is to remember to use
+quotes when using strings.
+
+18
+00:01:04,022 --> 00:01:05,435
+[BLANK_AUDIO]
+
+19
+00:01:05,435 --> 00:01:09,354
+If I add the quotes in, then the string
+gets printed out to the console.
+
+20
+00:01:09,354 --> 00:01:12,289
+[BLANK_AUDIO]
+1
+00:00:00,590 --> 00:00:04,035
+So you have all of these numbers,
+strings, and booleans, but
+
+2
+00:00:04,035 --> 00:00:06,115
+what are you supposed to do with them?
+
+3
+00:00:06,115 --> 00:00:10,865
+All of this data you've worked with so
+far has been for a one time use only.
+
+4
+00:00:10,865 --> 00:00:15,280
+You define the string, Hello,
+it's returned and that's it.
+
+5
+00:00:15,280 --> 00:00:16,430
+That's the end.
+
+6
+00:00:16,430 --> 00:00:18,530
+The string Hello is now gone.
+
+7
+00:00:18,530 --> 00:00:21,520
+&gt;&gt; You need a way to be able to store
+data, so that you can use it or
+
+8
+00:00:21,520 --> 00:00:22,990
+change it later.
+
+9
+00:00:22,990 --> 00:00:25,600
+To do this, you can use variables.
+
+10
+00:00:25,600 --> 00:00:29,242
+You've probably heard of variables
+before, maybe in a math class.
+
+11
+00:00:29,242 --> 00:00:32,980
+Let's say you have a variable called X,
+and it's assigned the value 5.
+
+12
+00:00:32,980 --> 00:00:36,522
+And then let's say we have
+the expression X + 1.
+
+13
+00:00:36,522 --> 00:00:41,990
+Since X has a value of 5, we can
+substitute the value of 5 in for X.
+
+14
+00:00:41,990 --> 00:00:45,902
+So the expression becomes 5 + 1 = 6.
+
+15
+00:00:45,902 --> 00:00:48,564
+&gt;&gt; In JavaScript, variable stored data,
+
+16
+00:00:48,564 --> 00:00:52,650
+much like how the variable you
+just saw stored the value of 5.
+
+17
+00:00:52,650 --> 00:00:56,357
+And they're not limit to
+the storing just numerical values,
+
+18
+00:00:56,357 --> 00:00:58,721
+you can store any data in two variable.
+
+19
+00:00:58,721 --> 00:01:03,920
+To create a variable, use the var
+keyword followed by the variableName,
+
+20
+00:01:03,920 --> 00:01:05,670
+and the assignment operator.
+
+21
+00:01:05,670 --> 00:01:08,240
+The assignment operator
+is the equal sign.
+
+22
+00:01:08,240 --> 00:01:10,490
+And then on the right side
+of the assignment operator,
+
+23
+00:01:10,490 --> 00:01:13,250
+put the value you want to
+assign to the variable.
+
+24
+00:01:13,250 --> 00:01:16,070
+As an example, here's my cat Zoe.
+
+25
+00:01:16,070 --> 00:01:20,630
+We can use a variable called name and
+set it equal to the string Zoe for
+
+26
+00:01:20,630 --> 00:01:21,820
+her name.
+
+27
+00:01:21,820 --> 00:01:25,380
+And for her age,
+we can create a variable called age, and
+
+28
+00:01:25,380 --> 00:01:28,000
+set that to the number 4,
+since Zoe's 4 years old.
+
+29
+00:01:29,380 --> 00:01:32,060
+Eventually, when Zoe
+has her next birthday,
+
+30
+00:01:32,060 --> 00:01:36,470
+I'll be able to use the age variable I
+created to increment Zoe's age by 1, so
+
+31
+00:01:36,470 --> 00:01:39,820
+the variable age will return
+Zoe's updated age of 5.
+
+32
+00:01:39,820 --> 00:01:41,280
+Now, Zoe's 5 years old.
+1
+00:00:00,000 --> 00:00:10,000
+[BLANK_AUDIO]
+1
+00:00:00,000 --> 00:00:10,000
+[BLANK_AUDIO]
+1
+00:00:00,000 --> 00:00:10,000
+[BLANK_AUDIO]
+1
+00:00:00,490 --> 00:00:03,150
+You've now seen how you can
+perform basic operations,
+
+2
+00:00:03,150 --> 00:00:06,390
+as well as comparisons on numbers and
+strings.
+
+3
+00:00:06,390 --> 00:00:07,850
+&gt;&gt; Whenever you compare data,
+
+4
+00:00:07,850 --> 00:00:11,640
+the result of the comparison will
+always be a value of true or false.
+
+5
+00:00:11,640 --> 00:00:14,650
+This is important because our
+third primitive data type,
+
+6
+00:00:14,650 --> 00:00:17,780
+Booleans, only includes
+these two values.
+
+7
+00:00:17,780 --> 00:00:23,410
+&gt;&gt; Just think, yes or no, on and
+off, true or false, ones and zeroes.
+
+8
+00:00:23,410 --> 00:00:25,740
+These are all values that really
+represent the same thing.
+
+9
+00:00:25,740 --> 00:00:31,100
+&gt;&gt; And this Boolean logic is a huge
+part of how we think about problems.
+
+10
+00:00:31,100 --> 00:00:32,000
+Code either runs or
+
+11
+00:00:32,000 --> 00:00:35,790
+it doesn't, there's no in-between,
+at least not in programming.
+
+12
+00:00:35,790 --> 00:00:39,360
+&gt;&gt; In this section, you'll dive deeper
+into Booleans by comparing data of
+
+13
+00:00:39,360 --> 00:00:42,550
+different types and learning about
+different ways to express equality.
+1
+00:00:00,450 --> 00:00:04,750
+So far, we've looked at the data
+types number, string, and boolean.
+
+2
+00:00:04,750 --> 00:00:08,956
+But there are couple more we need
+to look at, and those are null and
+
+3
+00:00:08,956 --> 00:00:09,807
+undefined.
+
+4
+00:00:09,807 --> 00:00:11,515
+At first,
+they might seem somewhat confusing,
+
+5
+00:00:11,515 --> 00:00:13,580
+because they are pretty similar.
+
+6
+00:00:13,580 --> 00:00:16,940
+So you might want to replay this
+explanation a couple of times.
+
+7
+00:00:16,940 --> 00:00:19,980
+Null is a data type that has no value,
+
+8
+00:00:19,980 --> 00:00:22,890
+just like how you can set
+a variable to a value of 10.
+
+9
+00:00:22,890 --> 00:00:26,560
+You could explicitly set
+a variable to a value of null.
+
+10
+00:00:27,760 --> 00:00:32,700
+Undefined is a data type that
+indicates the absence of value.
+
+11
+00:00:32,700 --> 00:00:35,600
+It's a bit confusing, but
+it's not the same as null.
+
+12
+00:00:36,720 --> 00:00:40,760
+Null is a value that means nothing or
+totally empty.
+
+13
+00:00:40,760 --> 00:00:45,300
+But undefined actually means
+does not have a value,
+
+14
+00:00:45,300 --> 00:00:47,160
+not even a value of nothing.
+
+15
+00:00:47,160 --> 00:00:53,660
+You could declare a variable x and try
+to use it, and it will return undefined.
+
+16
+00:00:53,660 --> 00:00:56,840
+It's undefined because
+the variable x exists,
+
+17
+00:00:56,840 --> 00:00:58,110
+it just doesn't have a value yet.
+
+18
+00:00:59,170 --> 00:01:01,290
+If you set a variable to
+the value of null and
+
+19
+00:01:01,290 --> 00:01:04,560
+try to use it, it will return null.
+
+20
+00:01:04,560 --> 00:01:05,610
+In other words,
+
+21
+00:01:05,610 --> 00:01:10,100
+undefined will be returned to you, if
+you didn't assign a value to something.
+
+22
+00:01:10,100 --> 00:01:12,700
+Null will be returned
+if you purposefully
+
+23
+00:01:12,700 --> 00:01:14,260
+assigned the value to nothing.
+1
+00:00:00,560 --> 00:00:03,510
+That about wraps it up for
+data types and variables.
+
+2
+00:00:03,510 --> 00:00:05,950
+You should congratulate
+yourself on a job well done.
+
+3
+00:00:05,950 --> 00:00:07,820
+That was a huge lesson.
+
+4
+00:00:07,820 --> 00:00:11,280
+&gt;&gt; In this lesson, we covered all
+the basic data types in JavaScript,
+
+5
+00:00:11,280 --> 00:00:16,860
+including numbers, strings,
+boolean, null and undefined.
+
+6
+00:00:16,860 --> 00:00:20,300
+Also, we looked at how you can
+store data into variables.
+
+7
+00:00:20,300 --> 00:00:22,763
+&gt;&gt; Don't forget operations
+on numbers and strings.
+
+8
+00:00:22,763 --> 00:00:23,590
+Right, that too.
+
+9
+00:00:23,590 --> 00:00:27,640
+In the next lesson, we'll build upon
+your new knowledge of data types and
+
+10
+00:00:27,640 --> 00:00:31,230
+variables to learn how to write
+code to solve logical problems.
+
+11
+00:00:31,230 --> 00:00:31,640
+See you there.
+1
+00:00:01,450 --> 00:00:02,029
+Welcome back.
+
+2
+00:00:02,029 --> 00:00:04,990
+In the last lesson,
+you got a basic understanding for
+
+3
+00:00:04,990 --> 00:00:08,610
+how data is represented and
+stored in the variables.
+
+4
+00:00:08,610 --> 00:00:11,990
+But what good is that data
+if you can't put it to use?
+
+5
+00:00:11,990 --> 00:00:15,080
+&gt;&gt; When you're writing code,
+the main goal is to solve a problem.
+
+6
+00:00:15,080 --> 00:00:19,490
+The steps your code takes to solve
+a problem is known as an algorithm.
+
+7
+00:00:19,490 --> 00:00:23,310
+Ultimately, for any code that you write,
+you will be breaking down a problem
+
+8
+00:00:23,310 --> 00:00:26,630
+into an algorithm that is
+executed by a computer.
+
+9
+00:00:26,630 --> 00:00:28,850
+&gt;&gt; Let me try explaining it another way.
+
+10
+00:00:28,850 --> 00:00:29,860
+Let's imagine you're the computer.
+
+11
+00:00:29,860 --> 00:00:34,200
+Do you remember the last time you had to
+decide whether to purchase something?
+
+12
+00:00:34,200 --> 00:00:36,050
+How did you solve that problem?
+
+13
+00:00:36,050 --> 00:00:39,150
+Besides figuring out if you
+really wanted or needed the item,
+
+14
+00:00:39,150 --> 00:00:41,980
+your decision to purchase the item was
+ultimately dependent on whether or
+
+15
+00:00:41,980 --> 00:00:44,500
+not you had enough money to purchase it.
+
+16
+00:00:44,500 --> 00:00:49,130
+So you ask yourself, self, do I have
+enough money to purchase this item?
+
+17
+00:00:49,130 --> 00:00:51,950
+If you answered, yes,
+then you purchase the item.
+
+18
+00:00:51,950 --> 00:00:54,650
+But if you answered, no,
+then you didn't purchased the item.
+
+19
+00:00:54,650 --> 00:00:57,230
+The process you went through in
+your head to solve that problem,
+
+20
+00:00:57,230 --> 00:00:59,580
+and the steps you took
+in order to do so,
+
+21
+00:00:59,580 --> 00:01:01,880
+is really what's at
+the heart of writing code.
+
+22
+00:01:01,880 --> 00:01:03,339
+And that's what you'll be
+learning in this lesson.
+
+23
+00:01:04,360 --> 00:01:06,480
+&gt;&gt; Up next, you'll see a flowchart.
+
+24
+00:01:06,480 --> 00:01:10,170
+A flowchart is just a diagram for
+how to solve a problem.
+
+25
+00:01:10,170 --> 00:01:12,400
+Take a look at it, and
+try to answer the next question.
+1
+00:00:00,520 --> 00:00:02,960
+Let's revisit the example from
+the beginning of the lesson, and
+
+2
+00:00:02,960 --> 00:00:06,580
+try to put in the context what's
+happening using JavaScript code.
+
+3
+00:00:06,580 --> 00:00:07,440
+Now if you don't remember,
+
+4
+00:00:07,440 --> 00:00:11,340
+the scenario we had was whether or
+not to purchase an item from the store.
+
+5
+00:00:11,340 --> 00:00:12,790
+To make this a little more realistic,
+
+6
+00:00:12,790 --> 00:00:16,750
+let's say the store I'm purchasing
+the item from is JD's Department Store.
+
+7
+00:00:16,750 --> 00:00:19,788
+Let's say the item that I want to
+purchase is a hammer, and
+
+8
+00:00:19,788 --> 00:00:21,510
+let's say it costs 15 bucks.
+
+9
+00:00:21,510 --> 00:00:25,600
+I'll update this flow chart and, okay,
+there we go, that looks a little better.
+
+10
+00:00:25,600 --> 00:00:28,060
+We've got purchased hammer
+from JD's Department Store.
+
+11
+00:00:28,060 --> 00:00:30,370
+If we got enough money,
+yes, buy the hammer.
+
+12
+00:00:30,370 --> 00:00:32,710
+If we don't, don't buy the hammer.
+
+13
+00:00:32,710 --> 00:00:36,920
+So the real question here is, do we have
+enough money to purchase the hammer?
+
+14
+00:00:36,920 --> 00:00:39,480
+And to answer that question,
+we need to know two things.
+
+15
+00:00:39,480 --> 00:00:41,770
+We need to know how much
+money do I have, and
+
+16
+00:00:41,770 --> 00:00:44,460
+how much money does the hammer cost.
+
+17
+00:00:44,460 --> 00:00:47,070
+Now we already know that
+the hammer costs $15, so
+
+18
+00:00:47,070 --> 00:00:50,940
+in code, I can store that value
+in a variable called price.
+
+19
+00:00:50,940 --> 00:00:52,790
+So let's do that right now.
+
+20
+00:00:52,790 --> 00:01:00,364
+Okay, so I've got my text editor open,
+and we'll say var price = $15.
+
+21
+00:01:00,364 --> 00:01:05,099
+And that's going to be the price
+of our hammer, all right.
+
+22
+00:01:05,099 --> 00:01:07,189
+And let's say, I have $20 on me, and
+
+23
+00:01:07,189 --> 00:01:11,316
+we'll store into another code called
+money, and set that equal to the $20.
+
+24
+00:01:11,316 --> 00:01:15,660
+So this is how much money I have, cool.
+
+25
+00:01:15,660 --> 00:01:18,040
+This gives us enough information
+to answer whether or
+
+26
+00:01:18,040 --> 00:01:20,680
+not I have enough money
+to purchase the hammer.
+
+27
+00:01:20,680 --> 00:01:25,420
+But in order to represent that question
+in code, we'll need to use a comparison.
+
+28
+00:01:25,420 --> 00:01:28,100
+If you remember back to
+the last lesson of data types,
+
+29
+00:01:28,100 --> 00:01:32,380
+we can use a comparison that
+compare two strings or two numbers.
+
+30
+00:01:32,380 --> 00:01:36,240
+So for this situation, I'll write
+my comparison to see if my money
+
+31
+00:01:36,240 --> 00:01:39,630
+is greater than or
+equal to my price of the hammer.
+
+32
+00:01:39,630 --> 00:01:40,800
+Now by itself,
+
+33
+00:01:40,800 --> 00:01:45,400
+we know that this expression will
+either evaluate the true or false.
+
+34
+00:01:45,400 --> 00:01:46,860
+If it evaluates to true,
+
+35
+00:01:46,860 --> 00:01:49,810
+then I know I've got enough
+money to purchase the hammer.
+
+36
+00:01:49,810 --> 00:01:54,388
+If it evaluates to false, then I'm out
+of luck and I can't buy the hammer.
+
+37
+00:01:54,388 --> 00:01:57,920
+But this code doesn't really
+do anything for us by itself.
+
+38
+00:01:57,920 --> 00:01:59,960
+So here's where things
+get really awesome.
+
+39
+00:01:59,960 --> 00:02:02,130
+We can actually represent
+this question and
+
+40
+00:02:02,130 --> 00:02:05,540
+both possible results using
+an if else statement.
+
+41
+00:02:05,540 --> 00:02:07,960
+So let me type that out, and
+then explain what's going on.
+
+42
+00:02:08,990 --> 00:02:14,260
+Okay, so the way this code reads
+is if money is greater than or
+
+43
+00:02:14,260 --> 00:02:19,060
+equal to price, then we'll want to
+print out, buy the hammer.
+
+44
+00:02:19,060 --> 00:02:23,490
+Otherwise, or else, we'll want to say,
+don't buy the hammer.
+
+45
+00:02:23,490 --> 00:02:26,530
+So what this actually means is,
+if our money is greater than or
+
+46
+00:02:26,530 --> 00:02:30,120
+equal to the price,
+run the code inside these curly braces.
+
+47
+00:02:30,120 --> 00:02:33,930
+Otherwise, run the code
+inside these curly braces.
+
+48
+00:02:33,930 --> 00:02:37,280
+Now pay attention to the curly braces
+here, because they're super important.
+
+49
+00:02:37,280 --> 00:02:41,130
+Whatever code is written inside of these
+things is going to be the code that's
+
+50
+00:02:41,130 --> 00:02:45,980
+executed when our condition is either
+true, like it is up here, or false.
+
+51
+00:02:45,980 --> 00:02:48,010
+Also, notice how I've
+indented the code over, so
+
+52
+00:02:48,010 --> 00:02:51,270
+you can tell what part of our
+code belongs to which block.
+
+53
+00:02:51,270 --> 00:02:54,110
+The code here belongs
+to our if statement.
+
+54
+00:02:54,110 --> 00:02:56,490
+The code here belongs
+to our else statement.
+
+55
+00:02:56,490 --> 00:02:58,640
+So to show you this code working,
+I'm just going to copy and
+
+56
+00:02:58,640 --> 00:03:00,750
+paste it over the JavaScript console.
+
+57
+00:03:00,750 --> 00:03:02,950
+We paste it in, awesome.
+
+58
+00:03:02,950 --> 00:03:04,010
+That's what we expect to see.
+
+59
+00:03:04,010 --> 00:03:09,110
+So our money, which is $20 is
+greater than or equal to the price.
+
+60
+00:03:09,110 --> 00:03:12,770
+So it hits this conditional statement
+because it's true, and it prints out,
+
+61
+00:03:12,770 --> 00:03:14,150
+buy the hammer.
+
+62
+00:03:14,150 --> 00:03:17,612
+And just to show you that it
+can work the other way around,
+
+63
+00:03:17,612 --> 00:03:22,825
+let's redo the same code, but let's say,
+it's $10 that I have instead of 20.
+
+64
+00:03:22,825 --> 00:03:24,800
+Awesome, then it prints out,
+don't buy the hammer.
+1
+00:00:00,850 --> 00:00:05,420
+JavaScript is created in just 10
+days by Brendan Eich back in 1995,
+
+2
+00:00:05,420 --> 00:00:08,029
+while Eich was working
+on Netscape Navigator.
+
+3
+00:00:08,029 --> 00:00:09,530
+For those of you don't know,
+
+4
+00:00:09,530 --> 00:00:13,240
+Netscape Navigator was one of
+the Internet's first web browsers.
+
+5
+00:00:13,240 --> 00:00:15,750
+Today, you use browsers
+like Google Chrome,
+
+6
+00:00:15,750 --> 00:00:20,478
+Mozilla Firefox, Apple Safari, and
+Microsoft Edge to surf the web.
+
+7
+00:00:20,478 --> 00:00:23,910
+&gt;&gt; Prior to Eich's creation of
+JavaScript, websites just existed as
+
+8
+00:00:23,910 --> 00:00:28,910
+pages of HTML and CSS with
+the occasional plug-in or Java applet.
+
+9
+00:00:28,910 --> 00:00:29,970
+&gt;&gt; Wait, Java?
+
+10
+00:00:29,970 --> 00:00:32,130
+&gt;&gt; Yes, well, at least at first.
+
+11
+00:00:32,130 --> 00:00:35,440
+JavaScript, what this course is about,
+is totally different and
+
+12
+00:00:35,440 --> 00:00:38,140
+not related to Java in any way.
+
+13
+00:00:38,140 --> 00:00:43,010
+The fact is, JavaScript has had sort
+of a weird past when it comes to names.
+
+14
+00:00:43,010 --> 00:00:45,540
+JavaScript was originally
+called LiveScript but
+
+15
+00:00:45,540 --> 00:00:48,390
+it was changed back to JavaScript
+as a marketing decision in
+
+16
+00:00:48,390 --> 00:00:52,020
+order to piggyback off
+the popularity of Java at the time.
+
+17
+00:00:52,020 --> 00:00:55,550
+As the language evolved, competing
+versions of the language emerged.
+
+18
+00:00:55,550 --> 00:00:58,340
+So JavaScript was eventually
+taken to Ecma International so
+
+19
+00:00:58,340 --> 00:01:01,160
+that an official standard for
+the language could be formed.
+
+20
+00:01:01,160 --> 00:01:04,349
+&gt;&gt; Today, the language itself is
+still referred to as JavaScript.
+
+21
+00:01:04,349 --> 00:01:07,680
+But recent versions are referenced
+by their ECMAScript version number,
+
+22
+00:01:07,680 --> 00:01:09,720
+like ES5 or ES6.
+
+23
+00:01:09,720 --> 00:01:13,760
+Even more recently, the standards body
+has transitioned to a year-based number
+
+24
+00:01:13,760 --> 00:01:16,130
+to promote a more
+consistent release cycle.
+
+25
+00:01:16,130 --> 00:01:19,540
+So we have now have ES2016,
+ES2017, and so on.
+
+26
+00:01:20,800 --> 00:01:22,560
+I know, it's confusing.
+
+27
+00:01:22,560 --> 00:01:25,490
+&gt;&gt; All things considered, JavaScript
+has grown to be one of the most popular
+
+28
+00:01:25,490 --> 00:01:29,360
+languages in the world and is considered
+one of the three foundational pillars of
+
+29
+00:01:29,360 --> 00:01:30,531
+front end web development.
+1
+00:00:00,470 --> 00:00:03,300
+Sometimes problems are not always
+as simple as buying something from
+
+2
+00:00:03,300 --> 00:00:07,800
+the store, in fact,
+most problems are a lot more complex.
+
+3
+00:00:07,800 --> 00:00:08,980
+&gt;&gt; With most problems,
+
+4
+00:00:08,980 --> 00:00:12,950
+there's more things to consider before
+you can actually solve the problem.
+
+5
+00:00:12,950 --> 00:00:16,030
+For example, me deciding what
+I want to do this weekend.
+
+6
+00:00:16,030 --> 00:00:18,040
+&gt;&gt; What were you planning
+on doing this weekend?
+
+7
+00:00:18,040 --> 00:00:21,131
+&gt;&gt; Well, I was thinking I would
+hang out with my friend Colt.
+
+8
+00:00:21,131 --> 00:00:22,285
+And, if he's not busy and
+
+9
+00:00:22,285 --> 00:00:25,510
+the weather is nice so
+I was thinking we could go to the park.
+
+10
+00:00:25,510 --> 00:00:27,219
+&gt;&gt; That sounds like fun.
+
+11
+00:00:27,219 --> 00:00:28,908
+I think, this is the perfect time for
+
+12
+00:00:28,908 --> 00:00:32,150
+us to transition into more
+complex logical expressions.
+
+13
+00:00:32,150 --> 00:00:32,990
+&gt;&gt; It is?
+
+14
+00:00:32,990 --> 00:00:34,440
+&gt;&gt; Well yeah, think about it.
+
+15
+00:00:34,440 --> 00:00:38,400
+For your plans to happen, there are two
+conditions that need to be true.
+
+16
+00:00:38,400 --> 00:00:41,710
+Call tests not be busy and
+the weather needs to be nice.
+
+17
+00:00:41,710 --> 00:00:44,530
+If both of those things happen, then,
+you and Colt are going to the park.
+
+18
+00:00:45,530 --> 00:00:47,460
+&gt;&gt; Okay, I see where you're going.
+
+19
+00:00:47,460 --> 00:00:51,260
+In JavaScript, we can represent more
+complex problems by combining logical
+
+20
+00:00:51,260 --> 00:00:54,880
+expressions with special operators
+called logical operators.
+
+21
+00:00:54,880 --> 00:00:55,300
+Check it out.
+1
+00:00:00,000 --> 00:00:08,140
+[BLANK_AUDIO]
+1
+00:00:00,880 --> 00:00:03,870
+Before you go any further, let's take
+a quick moment to look at the truth
+
+2
+00:00:03,870 --> 00:00:07,490
+tables for Logical AND and Logical OR.
+
+3
+00:00:07,490 --> 00:00:10,180
+Now truth tables are just the way
+of representing all the possible
+
+4
+00:00:10,180 --> 00:00:13,180
+combinations of inputs for
+a logical expression.
+
+5
+00:00:13,180 --> 00:00:17,340
+Here, I have the truth tables for
+Logical AND and Logical OR.
+
+6
+00:00:17,340 --> 00:00:20,290
+The way to read these tables is
+the first two columns, A and
+
+7
+00:00:20,290 --> 00:00:23,390
+B, are representative of Boolean values.
+
+8
+00:00:23,390 --> 00:00:27,520
+When both of these values are combined,
+the third column represents what
+
+9
+00:00:27,520 --> 00:00:31,063
+the resulting outcome would be for
+Logical AND and Logical OR.
+
+10
+00:00:31,063 --> 00:00:33,544
+Now, what is interesting
+about these tables, and
+
+11
+00:00:33,544 --> 00:00:36,776
+you might have noticed this already
+is that in some combinations,
+
+12
+00:00:36,776 --> 00:00:40,850
+the value of B has no impact on
+the result of the logical expression.
+
+13
+00:00:40,850 --> 00:00:44,140
+Let me highlight these tables in
+another way so you can see what I mean.
+
+14
+00:00:44,140 --> 00:00:45,000
+There we go.
+
+15
+00:00:45,000 --> 00:00:46,250
+So, if you look at these rows,
+
+16
+00:00:46,250 --> 00:00:50,580
+you'll notice that regardless of the
+value of B, the value of A is the value
+
+17
+00:00:50,580 --> 00:00:54,240
+that's actually determining
+the result of the logical expression.
+
+18
+00:00:54,240 --> 00:01:00,050
+For logical AND, if the value of A is
+false, the value of B doesn't matter.
+
+19
+00:01:00,050 --> 00:01:02,670
+The combined value will always be false.
+
+20
+00:01:02,670 --> 00:01:06,764
+And for Logical OR, if the value for
+A is true, then the value of B doesn't
+
+21
+00:01:06,764 --> 00:01:09,885
+matter because the combined
+value will always be true.
+
+22
+00:01:09,885 --> 00:01:12,920
+And this makes sense,
+just think about it.
+
+23
+00:01:12,920 --> 00:01:15,590
+In our previous example,
+where we were trying to decide if
+
+24
+00:01:15,590 --> 00:01:19,560
+Julia was going to the park,
+two conditions needed to be true.
+
+25
+00:01:19,560 --> 00:01:23,050
+Colt had to not be busy and
+the weather had to be nice.
+
+26
+00:01:23,050 --> 00:01:26,140
+If the value for the variable Colt
+happened to be anything other than not
+
+27
+00:01:26,140 --> 00:01:29,595
+busy, it wouldn't have mattered if
+the weather was going to be nice.
+
+28
+00:01:29,595 --> 00:01:33,630
+Julia would not have gone to the park
+because both conditions weren't true.
+
+29
+00:01:33,630 --> 00:01:36,350
+This type of behavior is
+called short circuiting,
+
+30
+00:01:36,350 --> 00:01:40,400
+because later arguments in a logical
+expression are not considered because
+
+31
+00:01:40,400 --> 00:01:43,330
+the first argument already
+satisfies the condition.
+
+32
+00:01:43,330 --> 00:01:45,553
+For logical AND,
+if the first value is false,
+
+33
+00:01:45,553 --> 00:01:48,880
+you don't need to see what
+the later argument is going to be.
+
+34
+00:01:48,880 --> 00:01:52,070
+The entire expression will
+always evaluate to false.
+
+35
+00:01:52,070 --> 00:01:55,130
+And for logical OR,
+if the first value is true,
+
+36
+00:01:55,130 --> 00:01:57,730
+you don't need to see what the later
+arguments are going to be because
+
+37
+00:01:57,730 --> 00:02:00,140
+the entire expression will
+always evaluate to true.
+1
+00:00:00,810 --> 00:00:04,830
+That just about covers the basics of
+conditionals and logical operators.
+
+2
+00:00:04,830 --> 00:00:07,920
+But we've got a couple more
+things we want to show you first.
+
+3
+00:00:07,920 --> 00:00:10,960
+&gt;&gt; For the rest of this lesson, we'll
+focus on some more advanced aspects of
+
+4
+00:00:10,960 --> 00:00:12,480
+working with conditional statements.
+
+5
+00:00:12,480 --> 00:00:16,190
+This includes things like truthy and
+falsey values, the ternary operator and
+
+6
+00:00:16,190 --> 00:00:16,830
+the switch statement.
+1
+00:00:00,000 --> 00:00:10,000
+[BLANK_AUDIO]
+1
+00:00:00,500 --> 00:00:03,220
+As you continue to write more and
+more conditional statements,
+
+2
+00:00:03,220 --> 00:00:06,780
+sometimes you might run into
+code that looks like this.
+
+3
+00:00:06,780 --> 00:00:10,090
+Basically each one of these
+conditional statements is checking for
+
+4
+00:00:10,090 --> 00:00:12,850
+a specific value in one variable, and
+
+5
+00:00:12,850 --> 00:00:16,430
+if that's true then the code inside
+the if statement will be ran.
+
+6
+00:00:16,430 --> 00:00:18,690
+Just to show you how this works,
+let's run this code and
+
+7
+00:00:18,690 --> 00:00:20,445
+see what its output back to us.
+
+8
+00:00:20,445 --> 00:00:24,753
+All right, so because the viable option
+is set to 3 we get print it back you
+
+9
+00:00:24,753 --> 00:00:27,824
+selected option 3, so
+not terribly complicated.
+
+10
+00:00:27,824 --> 00:00:32,336
+Now what about told you there's another
+way to achieved the same result without
+
+11
+00:00:32,336 --> 00:00:35,080
+using any conditional statement.
+
+12
+00:00:35,080 --> 00:00:38,430
+Well, in fact, there's just so
+happens to be another way and
+
+13
+00:00:38,430 --> 00:00:40,770
+that is by using a switch statement.
+
+14
+00:00:40,770 --> 00:00:44,010
+Now switch statement only works in
+situations like these where you have
+
+15
+00:00:44,010 --> 00:00:47,625
+a bunch of chained if statements based
+on the value of the same variable.
+
+16
+00:00:47,625 --> 00:00:50,375
+Let me rewrite this code
+using a switch statement and
+
+17
+00:00:50,375 --> 00:00:52,215
+then I'll explain how it works.
+
+18
+00:00:52,215 --> 00:00:55,045
+I'll keep the conditional statement
+version here on this side so
+
+19
+00:00:55,045 --> 00:00:56,865
+you can see the difference.
+
+20
+00:00:56,865 --> 00:00:57,575
+Okay, so
+
+21
+00:00:57,575 --> 00:01:01,235
+what I've done is I've wrapped all my
+code inside of a switch statement.
+
+22
+00:01:01,235 --> 00:01:02,725
+And just like it reads,
+
+23
+00:01:02,725 --> 00:01:07,485
+I want to switch which piece of code
+is ran based on the variable option.
+
+24
+00:01:07,485 --> 00:01:10,755
+The other thing I've done is I have
+replaced each if statement with a case
+
+25
+00:01:10,755 --> 00:01:14,140
+clause where the value of the case
+represents the value the variable
+
+26
+00:01:14,140 --> 00:01:18,630
+option needs to be in order to run the
+code that is contained underneath it.
+
+27
+00:01:18,630 --> 00:01:23,010
+Basically, if the value of option
+is say, 3 when our code reaches
+
+28
+00:01:23,010 --> 00:01:27,600
+the switch statement, it's going to
+look to see if a case like that exists.
+
+29
+00:01:27,600 --> 00:01:32,120
+If it does, and in this case it does,
+then it transfers control of that case,
+
+30
+00:01:32,120 --> 00:01:33,970
+and continues executing.
+
+31
+00:01:33,970 --> 00:01:37,840
+If it doesn't, then it bypasses
+the switch statement completely.
+
+32
+00:01:37,840 --> 00:01:40,320
+Just to show you how this works,
+let's run this code, and
+
+33
+00:01:40,320 --> 00:01:41,800
+see what is output back to us.
+
+34
+00:01:43,200 --> 00:01:44,020
+Look at that.
+
+35
+00:01:44,020 --> 00:01:49,271
+Instead of just printing you selected
+option 3 we also got option 4,
+
+36
+00:01:49,271 --> 00:01:53,740
+option 5 and option 6, so
+why is this happening?
+
+37
+00:01:53,740 --> 00:01:57,220
+Well, it's important to understand
+exactly what is going on when you use
+
+38
+00:01:57,220 --> 00:01:58,710
+a switch statement.
+
+39
+00:01:58,710 --> 00:02:01,650
+Remember, once our code
+reaches a switch statement,
+
+40
+00:02:01,650 --> 00:02:06,000
+it looks to see if in case for
+the bearable we are switching on exist.
+
+41
+00:02:06,000 --> 00:02:10,810
+If it does, then it transfers control
+to that case and continues executing.
+
+42
+00:02:10,810 --> 00:02:15,470
+But what it doesn't do is prevent any
+of the cases below it from not running.
+
+43
+00:02:15,470 --> 00:02:17,567
+This behavior is called falling through.
+
+44
+00:02:17,567 --> 00:02:21,007
+You see, you can think of a switch
+statement almost like jumping you to
+
+45
+00:02:21,007 --> 00:02:24,090
+a line of code,
+based on the value of a variable.
+
+46
+00:02:24,090 --> 00:02:28,450
+So in this case, option is set to 3 so
+we jump to the case 3, and
+
+47
+00:02:28,450 --> 00:02:30,510
+then we continue running our code.
+
+48
+00:02:30,510 --> 00:02:33,650
+That's why the other print
+statement get executed.
+
+49
+00:02:33,650 --> 00:02:36,390
+If you actually want to
+stop after a case is ran,
+
+50
+00:02:36,390 --> 00:02:39,200
+then you will need to
+use the keyword break.
+
+51
+00:02:39,200 --> 00:02:41,330
+A break statement can be used
+to exit our switch statement so
+
+52
+00:02:41,330 --> 00:02:42,520
+that no other cases are ran.
+
+53
+00:02:43,810 --> 00:02:47,580
+If I add break statements to each
+case and then ran this code again,
+
+54
+00:02:47,580 --> 00:02:51,430
+you see that we only get
+back you selected option 3.
+
+55
+00:02:51,430 --> 00:02:55,780
+Also, technically I don't need the break
+statement here on the last case because
+
+56
+00:02:55,780 --> 00:02:57,650
+this is the last case
+in a switch statement.
+
+57
+00:02:57,650 --> 00:03:00,590
+So there's a couple of things
+to take away from this.
+
+58
+00:03:00,590 --> 00:03:03,410
+Switch statements only work in
+situations where you want to execute
+
+59
+00:03:03,410 --> 00:03:06,790
+statements of code based on
+the value of some variable.
+
+60
+00:03:06,790 --> 00:03:10,620
+It's just another alternative and you
+might see it come up from time to time.
+
+61
+00:03:10,620 --> 00:03:13,610
+Another thing worth mentioning is that
+you can use a switch statement on
+
+62
+00:03:13,610 --> 00:03:16,150
+any type of data, not just numbers.
+
+63
+00:03:16,150 --> 00:03:18,920
+Also, there are even some
+scenarios where you might want to
+
+64
+00:03:18,920 --> 00:03:21,920
+leverage the falling through
+behavior of a switch statement.
+
+65
+00:03:21,920 --> 00:03:24,050
+We'll look at that more
+closely in the next section.
+1
+00:00:00,000 --> 00:00:10,000
+[BLANK_AUDIO]
+1
+00:00:00,400 --> 00:00:03,430
+Wow, we covered a lot of material.
+
+2
+00:00:03,430 --> 00:00:03,830
+&gt;&gt; Yeah, we did.
+
+3
+00:00:04,950 --> 00:00:07,330
+&gt;&gt; As you continue through
+the rest of this course,
+
+4
+00:00:07,330 --> 00:00:09,340
+remember what you
+learned in this lesson.
+
+5
+00:00:09,340 --> 00:00:12,440
+First, breaking down problems
+into their logical steps
+
+6
+00:00:12,440 --> 00:00:15,140
+is the first sign of a good programmer.
+
+7
+00:00:15,140 --> 00:00:16,239
+As you face new challenges,
+
+8
+00:00:16,239 --> 00:00:20,230
+stop to think about how you could break
+the problem down into smaller steps.
+
+9
+00:00:20,230 --> 00:00:22,350
+&gt;&gt; Second,
+using conditional statements and
+
+10
+00:00:22,350 --> 00:00:26,780
+logical operators will be paramount to
+your success as a JavaScript programmer.
+
+11
+00:00:26,780 --> 00:00:28,920
+By telling your code when and
+how to run,
+
+12
+00:00:28,920 --> 00:00:32,770
+you can create algorithms to solve
+even the most complex problems.
+
+13
+00:00:32,770 --> 00:00:33,950
+&gt;&gt; And finally,
+
+14
+00:00:33,950 --> 00:00:37,800
+remember the advanced techniques you
+learned towards the end of this lesson.
+
+15
+00:00:37,800 --> 00:00:42,460
+Things like truthy and falsy, the
+ternary operator, and switch statements
+
+16
+00:00:42,460 --> 00:00:46,230
+will pop up more often as you begin
+to work with more advanced code.
+
+17
+00:00:46,230 --> 00:00:47,280
+&gt;&gt; That's it for now.
+
+18
+00:00:47,280 --> 00:00:48,660
+We'll be waiting for
+you in the next lesson.
+1
+00:00:00,820 --> 00:00:02,120
+In the previous lesson,
+
+2
+00:00:02,120 --> 00:00:05,970
+you saw how you can control the flow of
+the program with conditional statements.
+
+3
+00:00:05,970 --> 00:00:10,060
+Basically, if a certain condition is
+true, execute this block of code.
+
+4
+00:00:10,060 --> 00:00:13,130
+Otherwise, execute this
+other block of code.
+
+5
+00:00:13,130 --> 00:00:16,730
+&gt;&gt; But there are often times when
+you want to execute a block of code,
+
+6
+00:00:16,730 --> 00:00:19,770
+not once, but
+maybe a hundred times, or more.
+
+7
+00:00:19,770 --> 00:00:22,640
+Maybe you're a teacher who needs
+to calculate the grades for
+
+8
+00:00:22,640 --> 00:00:24,290
+all of your students.
+
+9
+00:00:24,290 --> 00:00:28,763
+You might have 170 of them, or
+maybe you have 300 Facebook friends,
+
+10
+00:00:28,763 --> 00:00:33,026
+and you want to calculate the number
+of mutual friends for each friend.
+
+11
+00:00:33,026 --> 00:00:36,581
+Or maybe you just want to
+count to a million because who
+
+12
+00:00:36,581 --> 00:00:39,368
+wouldn't want to count to a million?
+
+13
+00:00:39,368 --> 00:00:42,849
+&gt;&gt; Writing code to do these kinds
+of tasks could result in hundreds,
+
+14
+00:00:42,849 --> 00:00:47,040
+thousands or millions of lines of code,
+all doing pretty much the same thing.
+
+15
+00:00:47,040 --> 00:00:51,140
+In this lesson, you will learn how to
+use JavaScript loops to repeatedly
+
+16
+00:00:51,140 --> 00:00:52,380
+execute a block of code.
+1
+00:00:00,298 --> 00:00:02,719
+Remember how I said loops could
+be used to count to a million?
+
+2
+00:00:03,750 --> 00:00:05,520
+Well, we're not going to do that.
+
+3
+00:00:05,520 --> 00:00:10,302
+We're going to count to 10,000 instead,
+starting with x equals 1.
+
+4
+00:00:10,302 --> 00:00:13,680
+Hey look, we're already done,
+1 mississippi!
+
+5
+00:00:13,680 --> 00:00:15,590
+We're on our way to 10,000 already.
+
+6
+00:00:16,650 --> 00:00:19,981
+Just so you know,
+counting to 10,000 is a tough task, and
+
+7
+00:00:19,981 --> 00:00:24,150
+like many tough tasks,
+it's good to work on them incrementally.
+
+8
+00:00:24,150 --> 00:00:26,355
+Let's increase the value of x by 1.
+
+9
+00:00:27,510 --> 00:00:28,460
+This is awesome.
+
+10
+00:00:28,460 --> 00:00:31,220
+See, we're making progress.
+
+11
+00:00:31,220 --> 00:00:34,360
+In no time,
+we'll be all the way to 10,000.
+
+12
+00:00:34,360 --> 00:00:37,510
+Yay, look how far you've gotten.
+
+13
+00:00:37,510 --> 00:00:38,520
+Okay, let's keep going.
+
+14
+00:00:40,530 --> 00:00:41,490
+Hey, wait a minute!
+
+15
+00:00:42,540 --> 00:00:45,141
+This is all the same code.
+
+16
+00:00:45,141 --> 00:00:48,011
+So repeating the same code over and
+over and
+
+17
+00:00:48,011 --> 00:00:52,232
+over again is definitely not going
+to be the best option for us,
+
+18
+00:00:52,232 --> 00:00:56,800
+if we want to print out all
+the numbers between 1 and 10,000.
+
+19
+00:00:56,800 --> 00:00:59,230
+There has to be a better way.
+
+20
+00:00:59,230 --> 00:01:00,620
+And you know what?
+
+21
+00:01:00,620 --> 00:01:03,942
+There is a better way, loops.
+
+22
+00:01:03,942 --> 00:01:06,612
+Using a loop will let you
+iterate over values and
+
+23
+00:01:06,612 --> 00:01:09,120
+repeatedly run a block of code.
+
+24
+00:01:09,120 --> 00:01:12,190
+In this case,
+the block of code you want to repeat, is
+
+25
+00:01:12,190 --> 00:01:16,556
+incriminating the value of x and using
+console.log to print out the message.
+
+26
+00:01:17,750 --> 00:01:22,430
+The only piece you really need to
+start your loop is right here but
+
+27
+00:01:22,430 --> 00:01:23,460
+we'll need to tweak it a bit.
+
+28
+00:01:24,660 --> 00:01:28,070
+Now, this code shows x
+starting at the value of 1,
+
+29
+00:01:28,070 --> 00:01:33,000
+and then it prints out the value of
+x and finally, x is incremented.
+
+30
+00:01:34,340 --> 00:01:39,353
+And because we want to do these two
+steps all the way until we reach 10,000,
+
+31
+00:01:39,353 --> 00:01:41,060
+we'll wrap that code in a loop.
+
+32
+00:01:42,380 --> 00:01:46,701
+This particular type of loop
+is called a while loop.
+
+33
+00:01:46,701 --> 00:01:49,283
+As long as this condition is true,
+
+34
+00:01:49,283 --> 00:01:54,372
+the loop will print out the number and
+increment the value of x by 1.
+
+35
+00:01:54,372 --> 00:01:57,371
+And then it will restart if
+the condition at the top of the loop is
+
+36
+00:01:57,371 --> 00:01:58,630
+still true.
+
+37
+00:01:58,630 --> 00:02:04,470
+So congratulations, in just five lines
+of code you can count to 10,000 and
+
+38
+00:02:04,470 --> 00:02:06,350
+pretty much any number
+you'd like to count to.
+1
+00:00:00,420 --> 00:00:03,430
+in this video i am going to show you how
+to get to Google Chrome's developers
+
+2
+00:00:03,430 --> 00:00:05,312
+tool to access JavaScript console.
+
+3
+00:00:05,312 --> 00:00:08,560
+You're going to be using the console to
+run most of the code that you write in
+
+4
+00:00:08,560 --> 00:00:09,840
+this course.
+
+5
+00:00:09,840 --> 00:00:12,710
+if you are already using Google Chrome
+then what you see in this video should
+
+6
+00:00:12,710 --> 00:00:14,640
+match up in what you
+see on your computer.
+
+7
+00:00:14,640 --> 00:00:18,350
+But if you're not using Google Chrome,
+then skip ahead to the next section for
+
+8
+00:00:18,350 --> 00:00:21,720
+instructions on how to access
+developer tools in other browsers, and
+
+9
+00:00:21,720 --> 00:00:22,810
+then come back to this video.
+
+10
+00:00:22,810 --> 00:00:23,780
+All right,
+
+11
+00:00:23,780 --> 00:00:27,370
+now the first thing you'll need to
+do is to open up developer tools.
+
+12
+00:00:27,370 --> 00:00:31,617
+You can do this by right clicking
+on the page, and selecting Inspect.
+
+13
+00:00:31,617 --> 00:00:33,601
+Once you have developer tools open,
+
+14
+00:00:33,601 --> 00:00:37,249
+you can find the JavaScript Console
+by clicking on the Console tab.
+
+15
+00:00:37,249 --> 00:00:42,097
+If you like keyboard shortcuts,
+you can also use Cmd+Option+J on a Mac
+
+16
+00:00:42,097 --> 00:00:46,410
+to open the console, or
+you can use Ctrl+Shift+J on Windows.
+
+17
+00:00:46,410 --> 00:00:49,402
+There's a really useful reference
+of keyboard shortcuts for
+
+18
+00:00:49,402 --> 00:00:51,481
+developer tools linked below this video.
+
+19
+00:00:51,481 --> 00:00:54,042
+All right, so now that you have
+the JavaScript console open,
+
+20
+00:00:54,042 --> 00:00:57,080
+let's write your first
+line of JavaScript code.
+
+21
+00:00:57,080 --> 00:00:59,290
+One thing you could do
+is write your name.
+
+22
+00:00:59,290 --> 00:01:04,110
+But just writing your name will actually
+result in an error as you can see here.
+
+23
+00:01:04,110 --> 00:01:07,620
+To be able to actually write your
+name in JavaScript without any error
+
+24
+00:01:07,620 --> 00:01:10,620
+you need to format your name
+as a data type called a string
+
+25
+00:01:10,620 --> 00:01:11,750
+by putting it inside quotes.
+
+26
+00:01:13,170 --> 00:01:15,150
+Why don't we try something else?
+
+27
+00:01:15,150 --> 00:01:18,030
+Here's some code that creates
+an alert window that says, Hello,
+
+28
+00:01:18,030 --> 00:01:19,710
+Julia, how are you?
+
+29
+00:01:19,710 --> 00:01:21,610
+And it pushes it to the browser.
+
+30
+00:01:21,610 --> 00:01:22,080
+There you go.
+
+31
+00:01:23,160 --> 00:01:25,860
+Now writing code directly in your
+browser is something you can do to test
+
+32
+00:01:25,860 --> 00:01:30,218
+out new code snippets where you're
+not really sure what they do.
+
+33
+00:01:30,218 --> 00:01:32,700
+But it could actually get pretty
+annoying once you starting writing
+
+34
+00:01:32,700 --> 00:01:34,940
+larger and larger programs.
+
+35
+00:01:34,940 --> 00:01:38,650
+For example, if you wanted to create
+two alerts instead of just one,
+
+36
+00:01:38,650 --> 00:01:43,190
+it may seem simple at first, but each
+time you need to go to the next line,
+
+37
+00:01:43,190 --> 00:01:47,260
+you would have to type Shift+Return
+instead of just the Return key.
+
+38
+00:01:47,260 --> 00:01:50,730
+This is going to get pretty
+annoying pretty fast.
+
+39
+00:01:50,730 --> 00:01:51,830
+Eventually in the next course,
+
+40
+00:01:51,830 --> 00:01:54,280
+you'll learn about other ways
+to run JavaScript files.
+
+41
+00:01:54,280 --> 00:01:58,530
+But for now we recommend using a text
+editor like Atom or Sublime Text and
+
+42
+00:01:58,530 --> 00:02:01,200
+then pasting your code in the console
+once you're ready to test it.
+1
+00:00:00,000 --> 00:00:10,000
+[BLANK_AUDIO]
+1
+00:00:00,143 --> 00:00:01,638
+When using a while loop,
+
+2
+00:00:01,638 --> 00:00:06,283
+it's very easy to accidentally forget
+one of the three main pieces of a loop.
+
+3
+00:00:06,283 --> 00:00:10,258
+Remember, a loop should
+always include when to start,
+
+4
+00:00:10,258 --> 00:00:13,314
+when to stop and
+how to get to the next item.
+
+5
+00:00:13,314 --> 00:00:17,550
+Forgetting any of these three pieces
+will create an infinite loop that
+
+6
+00:00:17,550 --> 00:00:18,996
+crashes your browser.
+
+7
+00:00:18,996 --> 00:00:20,484
+I should know.
+
+8
+00:00:20,484 --> 00:00:23,495
+While creating this lesson,
+I crashed my browser many times.
+
+9
+00:00:23,495 --> 00:00:26,560
+&gt;&gt; Well, that was a great pun, Julia.
+
+10
+00:00:26,560 --> 00:00:28,470
+&gt;&gt; Why, thank you, James.
+
+11
+00:00:28,470 --> 00:00:31,570
+In fact, a lot of programmers
+will probably tell you not to
+
+12
+00:00:31,570 --> 00:00:34,130
+use while loops because
+there's another type of loop
+
+13
+00:00:34,130 --> 00:00:37,300
+that will give you more control
+over the looping process.
+
+14
+00:00:37,300 --> 00:00:38,600
+Next up, the for-loop.
+1
+00:00:00,410 --> 00:00:03,640
+For loops are the most common
+type of loop in JavaScript.
+
+2
+00:00:03,640 --> 00:00:06,759
+What makes them different than
+the earlier while loop is that for
+
+3
+00:00:06,759 --> 00:00:09,822
+loops forced you to specifically
+define the starting point and
+
+4
+00:00:09,822 --> 00:00:11,280
+stopping point of your loop.
+
+5
+00:00:11,280 --> 00:00:14,363
+As well as how your loop is going
+to proceed to the next step.
+
+6
+00:00:14,363 --> 00:00:18,518
+Now you might be saying to yourself, how
+is that any different from a while loop?
+
+7
+00:00:18,518 --> 00:00:22,060
+In a while loop, I had to specify
+all of those same things.
+
+8
+00:00:22,060 --> 00:00:24,560
+Well, the difference is in a for
+
+9
+00:00:24,560 --> 00:00:28,420
+loop, you have to define all that
+upfront in the for statement.
+
+10
+00:00:28,420 --> 00:00:32,820
+In this example, I have a for loop that
+prints out the value zero through five.
+
+11
+00:00:32,820 --> 00:00:34,880
+Let's look at how it's set up.
+
+12
+00:00:34,880 --> 00:00:38,670
+For a standard four loop, it requires
+the same three pieces of information as
+
+13
+00:00:38,670 --> 00:00:42,820
+before and each of these pieces
+are separated by semicolon.
+
+14
+00:00:42,820 --> 00:00:44,880
+The first piece is your starting point.
+
+15
+00:00:44,880 --> 00:00:48,070
+For this example, we have
+a variable i that is set to zero.
+
+16
+00:00:48,070 --> 00:00:50,790
+The second piece is your stopping point.
+
+17
+00:00:50,790 --> 00:00:54,010
+This is going to tell us when
+we want our loop to stop.
+
+18
+00:00:54,010 --> 00:00:58,110
+In this case, we want the loop to
+stop executing once our variable i
+
+19
+00:00:58,110 --> 00:01:00,120
+is no longer less than six.
+
+20
+00:01:00,120 --> 00:01:04,629
+If i can no longer satisfy that
+condition, then our loop will exit.
+
+21
+00:01:04,629 --> 00:01:06,605
+The third and final piece of our for
+
+22
+00:01:06,605 --> 00:01:09,615
+loop is how our loop should
+proceed to the next step.
+
+23
+00:01:09,615 --> 00:01:13,427
+In this example,
+we say that each time our loop runs,
+
+24
+00:01:13,427 --> 00:01:16,235
+we want to increase
+the value of i by one.
+
+25
+00:01:16,235 --> 00:01:18,074
+All right, so that's the setup.
+
+26
+00:01:18,074 --> 00:01:21,362
+For this next part, I'm going to walk
+you though each iteration of our for
+
+27
+00:01:21,362 --> 00:01:22,520
+loop.
+
+28
+00:01:22,520 --> 00:01:25,690
+Normally, you don't really
+think about or notice how
+
+29
+00:01:25,690 --> 00:01:30,230
+each iteration of a loop runs,
+because your code executes so fast.
+
+30
+00:01:30,230 --> 00:01:32,990
+So what I'm doing here,
+sort of slowing it down for you, so
+
+31
+00:01:32,990 --> 00:01:36,340
+you can see how the code is going to
+be interpreted, as it's being ran.
+
+32
+00:01:37,430 --> 00:01:39,004
+I've also added this table, so
+
+33
+00:01:39,004 --> 00:01:42,047
+you can see the value of i
+throughout the lifetime of the loop.
+
+34
+00:01:42,047 --> 00:01:45,411
+If you're ever writing loops and
+your loop isn't behaving exactly how
+
+35
+00:01:45,411 --> 00:01:48,730
+you might expect, doing an exercise
+like this can be really helpful.
+
+36
+00:01:49,880 --> 00:01:50,406
+At the end,
+
+37
+00:01:50,406 --> 00:01:53,850
+I'll paste this code into the console so
+you can see it running at full speed.
+
+38
+00:01:53,850 --> 00:01:57,931
+Okay, so when our loop starts,
+i is set to zero.
+
+39
+00:01:57,931 --> 00:02:02,284
+Then we check the condition
+to see if i is less than six.
+
+40
+00:02:02,284 --> 00:02:05,430
+If that condition is true,
+then we go into our loop.
+
+41
+00:02:05,430 --> 00:02:08,000
+So, in this statement we're just
+going to print out the value of i.
+
+42
+00:02:08,000 --> 00:02:10,500
+So printing out i equals 0.
+
+43
+00:02:10,500 --> 00:02:11,240
+Awesome.
+
+44
+00:02:11,240 --> 00:02:13,390
+So we just finished our
+first step of the loop and
+
+45
+00:02:13,390 --> 00:02:17,230
+now, we need to go look and see how
+we've defined to get to the next step.
+
+46
+00:02:18,340 --> 00:02:21,030
+So, our code jumps back up and
+it looks and it says,
+
+47
+00:02:21,030 --> 00:02:25,090
+okay, we're going to increment i by one,
+so i is now one.
+
+48
+00:02:25,090 --> 00:02:28,519
+Let's check our condition again to make
+sure that we want to jump into the loop.
+
+49
+00:02:28,519 --> 00:02:31,894
+And If i is less than six, which it is
+again, it's going to evaluate the true
+
+50
+00:02:31,894 --> 00:02:35,006
+and we're going to jump back into
+the loop or run the statement again.
+
+51
+00:02:35,006 --> 00:02:37,300
+And now, we got printing out i equals 1.
+
+52
+00:02:37,300 --> 00:02:41,430
+And we're just going to continue
+this process until the condition
+
+53
+00:02:41,430 --> 00:02:44,190
+i is less than six is no longer true.
+
+54
+00:02:44,190 --> 00:02:46,366
+So look, we'll increment i by one.
+
+55
+00:02:46,366 --> 00:02:47,406
+Now it's two.
+
+56
+00:02:47,406 --> 00:02:48,800
+We'll look at our condition.
+
+57
+00:02:48,800 --> 00:02:51,748
+It evaluates to true again,
+and we print out the value.
+
+58
+00:02:51,748 --> 00:02:56,651
+So I can just keep running through this,
+and eventually, we will get to
+
+59
+00:02:56,651 --> 00:03:01,084
+the very end where i is going to be six,
+and six is not less than six.
+
+60
+00:03:01,084 --> 00:03:03,090
+So, here we go.
+
+61
+00:03:03,090 --> 00:03:04,430
+We're at four.
+
+62
+00:03:04,430 --> 00:03:05,460
+Now, we're moving to five.
+
+63
+00:03:05,460 --> 00:03:06,850
+The condition's still true.
+
+64
+00:03:06,850 --> 00:03:08,620
+We print out the value.
+
+65
+00:03:08,620 --> 00:03:10,100
+Okay, we get to the end.
+
+66
+00:03:10,100 --> 00:03:13,400
+Now we increment the value
+one more time, now it's six.
+
+67
+00:03:13,400 --> 00:03:16,600
+And when we go to check our condition,
+it evaluates to false.
+
+68
+00:03:16,600 --> 00:03:18,796
+And we jump out of the loop.
+
+69
+00:03:18,796 --> 00:03:21,306
+Now just to show you our for
+loop running in full speed,
+
+70
+00:03:21,306 --> 00:03:23,171
+here I've got it pasted in the console.
+
+71
+00:03:23,171 --> 00:03:27,262
+And when I hit enter, boom, we've got
+printing out zero, one, two, three,
+
+72
+00:03:27,262 --> 00:03:28,008
+four, five.
+
+73
+00:03:28,008 --> 00:03:31,031
+And once we get to six,
+the condition doesn't hold true and
+
+74
+00:03:31,031 --> 00:03:32,250
+we jump out of the loop.
+1
+00:00:00,230 --> 00:00:04,130
+Just like conditional statements,
+you can nest loops inside of each other.
+
+2
+00:00:04,130 --> 00:00:07,050
+This doesn't add anything
+new to your loops per se,
+
+3
+00:00:07,050 --> 00:00:09,200
+just an extra layer of complexity.
+
+4
+00:00:09,200 --> 00:00:11,850
+Here I have an example of a nested loop.
+
+5
+00:00:11,850 --> 00:00:13,030
+If you look at the first for
+
+6
+00:00:13,030 --> 00:00:16,040
+loop, there's another
+loop nested inside of it.
+
+7
+00:00:16,040 --> 00:00:19,820
+Similar to what I did in the for loops
+video, I want to take some time to walk
+
+8
+00:00:19,820 --> 00:00:23,770
+through each step of this code so
+you can see exactly what is happening.
+
+9
+00:00:23,770 --> 00:00:26,580
+Because nested loops add
+another layer of complexity,
+
+10
+00:00:26,580 --> 00:00:30,660
+seeing this code step through this way
+should help you in visualizing what is
+
+11
+00:00:30,660 --> 00:00:34,020
+actually happening when this code
+is being interpreted and ran.
+
+12
+00:00:34,020 --> 00:00:37,670
+Again, I'm going to add the table here
+so that you can see the values of x and
+
+13
+00:00:37,670 --> 00:00:39,820
+y while we go through the loop.
+
+14
+00:00:39,820 --> 00:00:40,790
+Okay, so here we go.
+
+15
+00:00:40,790 --> 00:00:45,940
+When our first loop starts,
+the value of x is set to zero.
+
+16
+00:00:45,940 --> 00:00:49,660
+Next, we check the condition
+to see if x is less than 3.
+
+17
+00:00:49,660 --> 00:00:53,070
+And because that evaluates to true,
+we jump in to the loop.
+
+18
+00:00:53,070 --> 00:00:55,120
+But now, we've got another loop.
+
+19
+00:00:55,120 --> 00:00:56,790
+So, just like we did with the first for
+
+20
+00:00:56,790 --> 00:01:00,489
+loop, again we're going to
+set the variable of y = 0.
+
+21
+00:01:00,489 --> 00:01:04,060
+We're going to check our condition,
+is zero less than 2?
+
+22
+00:01:04,060 --> 00:01:04,690
+Yes, it is.
+
+23
+00:01:04,690 --> 00:01:06,460
+So that's true.
+
+24
+00:01:06,460 --> 00:01:07,710
+And then we jump into this loop.
+
+25
+00:01:07,710 --> 00:01:10,540
+And we're going to print
+out the value of x and y.
+
+26
+00:01:10,540 --> 00:01:12,440
+So that's a zero, zero.
+
+27
+00:01:12,440 --> 00:01:17,640
+So, once we get to the end of that step,
+then we jump back up to the top of that
+
+28
+00:01:17,640 --> 00:01:22,980
+nested for loop, and we see how it's
+been defined to move to the next step.
+
+29
+00:01:22,980 --> 00:01:25,780
+So in this one,
+y's just getting incremented by one.
+
+30
+00:01:25,780 --> 00:01:27,789
+So we'll set y now equal to 1.
+
+31
+00:01:27,789 --> 00:01:29,530
+We'll check our condition.
+
+32
+00:01:29,530 --> 00:01:32,490
+1 is less than 2,
+that's true, and we'll print.
+
+33
+00:01:32,490 --> 00:01:37,200
+And we'll keep doing this until that
+condition is no longer satisfied.
+
+34
+00:01:37,200 --> 00:01:39,610
+So here, we'll increment y again by 1.
+
+35
+00:01:39,610 --> 00:01:42,390
+And now, 2 is less than 2.
+
+36
+00:01:42,390 --> 00:01:43,510
+That doesn't evaluate to true.
+
+37
+00:01:43,510 --> 00:01:44,560
+That's false.
+
+38
+00:01:44,560 --> 00:01:46,960
+So now, that means we're
+going to jump out of our loop.
+
+39
+00:01:46,960 --> 00:01:50,680
+But we're still in that first
+loop that we started with.
+
+40
+00:01:50,680 --> 00:01:54,110
+So what happens is, we go and
+we look at how it's been defined to
+
+41
+00:01:54,110 --> 00:01:56,640
+increment to the next step for
+that first loop.
+
+42
+00:01:56,640 --> 00:01:59,410
+In this one,
+x is supposed to be incremented by 1.
+
+43
+00:01:59,410 --> 00:02:01,690
+So we increment x by 1.
+
+44
+00:02:01,690 --> 00:02:03,470
+We check our condition, is 1&lt;3?
+
+45
+00:02:03,470 --> 00:02:05,670
+Yes it is, that's true.
+
+46
+00:02:05,670 --> 00:02:07,098
+And now we jump into the loop.
+
+47
+00:02:07,098 --> 00:02:10,580
+So again, there's nothing
+new that is happening here.
+
+48
+00:02:10,580 --> 00:02:13,770
+It's just sort of an added level
+of complexity that you have to pay
+
+49
+00:02:13,770 --> 00:02:15,260
+attention to.
+
+50
+00:02:15,260 --> 00:02:16,910
+And there's not going to
+be any surprises here.
+
+51
+00:02:16,910 --> 00:02:19,630
+We're going to go through
+the second loop twice,
+
+52
+00:02:19,630 --> 00:02:21,930
+it'll always evaluate to
+true those first two times.
+
+53
+00:02:21,930 --> 00:02:25,810
+And then the third time 2 is
+not going to be less than 2.
+
+54
+00:02:25,810 --> 00:02:27,430
+That will evaluate to false.
+
+55
+00:02:27,430 --> 00:02:30,900
+We'll jump out of that second for loop,
+and then we'll look at our first for
+
+56
+00:02:30,900 --> 00:02:31,680
+loop.
+
+57
+00:02:31,680 --> 00:02:36,010
+So this will run a couple of more times,
+and I'm just going to kind of step
+
+58
+00:02:36,010 --> 00:02:37,730
+through it here so
+you guys can see what's going on.
+
+59
+00:02:37,730 --> 00:02:41,240
+And if this is a little too fast
+feel free to kind of slow it down or
+
+60
+00:02:41,240 --> 00:02:42,640
+go back and watch.
+
+61
+00:02:42,640 --> 00:02:47,680
+But we're in the nested for loop,
+and we're just incrementing y here.
+
+62
+00:02:47,680 --> 00:02:49,260
+Y is now 1.
+
+63
+00:02:49,260 --> 00:02:50,150
+That is less than 2.
+
+64
+00:02:50,150 --> 00:02:51,120
+It evaluates to true.
+
+65
+00:02:51,120 --> 00:02:54,110
+And we jump in, we print our statement.
+
+66
+00:02:54,110 --> 00:02:56,360
+We're going to increment
+y one more time.
+
+67
+00:02:56,360 --> 00:02:58,180
+It's going to be 2 now.
+
+68
+00:02:58,180 --> 00:02:59,850
+And 2 is not less than 2.
+
+69
+00:02:59,850 --> 00:03:00,930
+That's going to be false.
+
+70
+00:03:00,930 --> 00:03:01,990
+We're going to jump out of our loop.
+
+71
+00:03:01,990 --> 00:03:04,480
+We're going to go to our first loop.
+
+72
+00:03:04,480 --> 00:03:08,160
+And this time,
+X is going to get incremented to 3.
+
+73
+00:03:08,160 --> 00:03:10,580
+And 3 is not less than 3.
+
+74
+00:03:10,580 --> 00:03:14,340
+That evaluates to false, and
+we jump out of the entire thing.
+
+75
+00:03:14,340 --> 00:03:17,990
+So again, nested loops don't add
+anything new to our loops, but
+
+76
+00:03:17,990 --> 00:03:20,110
+just another level of complexity.
+1
+00:00:00,520 --> 00:00:02,400
+With loops you often need to increase or
+
+2
+00:00:02,400 --> 00:00:06,380
+decrease the value of a variable
+in order to step through the loop.
+
+3
+00:00:06,380 --> 00:00:06,910
+For instance,
+
+4
+00:00:06,910 --> 00:00:12,820
+with this loop we're using x = x +
+1 to increase the value of x by 1.
+
+5
+00:00:12,820 --> 00:00:15,250
+Before it starts the next
+iteration of the loop.
+
+6
+00:00:15,250 --> 00:00:18,010
+With JavaScript and
+many other programming languages.
+
+7
+00:00:18,010 --> 00:00:20,480
+There's actually an increment operator.
+
+8
+00:00:20,480 --> 00:00:23,980
+That gives you a short cut for
+doing the exact same thing.
+
+9
+00:00:23,980 --> 00:00:25,640
+And it is written in two different ways.
+
+10
+00:00:25,640 --> 00:00:30,287
+You have x++ and you have ++x.
+
+11
+00:00:30,287 --> 00:00:34,358
+X++ is actually just
+the same as x = x + 1.
+
+12
+00:00:35,510 --> 00:00:39,250
+However, what it is going to do
+is return the original value of
+
+13
+00:00:39,250 --> 00:00:41,590
+x before it increments it.
+
+14
+00:00:41,590 --> 00:00:44,800
+You can read this as return
+x then increments it.
+
+15
+00:00:44,800 --> 00:00:47,510
+And just to show you what that means and
+how that looks.
+
+16
+00:00:47,510 --> 00:00:49,890
+Let's just do this over in
+the JavaScript console.
+
+17
+00:00:49,890 --> 00:00:52,370
+So if I was to create
+a variable called x.
+
+18
+00:00:52,370 --> 00:00:53,810
+And let's set it = to 0.
+
+19
+00:00:53,810 --> 00:00:56,530
+If I increment it using the operator.
+
+20
+00:00:56,530 --> 00:00:57,320
+It returns back 0.
+
+21
+00:00:57,320 --> 00:00:58,090
+And you're like, what the heck?
+
+22
+00:00:58,090 --> 00:01:00,320
+I thought it was suppose to go up by 1?
+
+23
+00:01:00,320 --> 00:01:03,530
+Well, what's actually happening is
+that it returns the value back to us.
+
+24
+00:01:03,530 --> 00:01:04,319
+Then it increments it.
+
+25
+00:01:04,319 --> 00:01:06,710
+So if we look at the value of x now.
+
+26
+00:01:06,710 --> 00:01:08,510
+It's 1, so it has been incremented.
+
+27
+00:01:08,510 --> 00:01:10,500
+It just sort of did it after the fact.
+
+28
+00:01:10,500 --> 00:01:13,110
+Now, ++x is going to work the same way.
+
+29
+00:01:13,110 --> 00:01:15,340
+It's going to increment by 1.
+
+30
+00:01:15,340 --> 00:01:18,120
+But it's going to do it and
+then return the value back to us.
+
+31
+00:01:18,120 --> 00:01:20,510
+So if we run ++x.
+
+32
+00:01:20,510 --> 00:01:21,410
+It returns back 2.
+
+33
+00:01:21,410 --> 00:01:22,830
+It's incremented it.
+
+34
+00:01:22,830 --> 00:01:23,920
+It's still 2 after that.
+
+35
+00:01:23,920 --> 00:01:25,880
+So it just sort of does it beforehand.
+
+36
+00:01:25,880 --> 00:01:27,360
+And that's the difference
+between the two.
+
+37
+00:01:27,360 --> 00:01:32,070
+Now you might be wondering,
+when should you use one over the other?
+
+38
+00:01:32,070 --> 00:01:35,080
+In many cases it doesn't really matter
+which one you're going to choose.
+
+39
+00:01:35,080 --> 00:01:36,550
+When we're talking about loops.
+
+40
+00:01:36,550 --> 00:01:38,810
+They both increment x by 1.
+
+41
+00:01:38,810 --> 00:01:42,840
+However the value it returns might be
+important depending on the program that
+
+42
+00:01:42,840 --> 00:01:43,350
+you're writing.
+
+43
+00:01:43,350 --> 00:01:45,770
+So it's just something to keep in mind.
+
+44
+00:01:45,770 --> 00:01:47,500
+Another thing you might be wondering is,
+
+45
+00:01:47,500 --> 00:01:49,840
+are there other shorthand
+ways of doing arithmetic?
+
+46
+00:01:49,840 --> 00:01:51,800
+Can I increase something by two?
+
+47
+00:01:51,800 --> 00:01:53,150
+Can I decrease something?
+
+48
+00:01:53,150 --> 00:01:54,970
+Can I do like quick multiplication?
+
+49
+00:01:54,970 --> 00:01:56,270
+And in fact there is.
+
+50
+00:01:56,270 --> 00:01:58,780
+So I'm just going to show you a couple
+of different examples of that.
+
+51
+00:01:58,780 --> 00:02:00,420
+So let's create a new variable called y.
+
+52
+00:02:00,420 --> 00:02:01,690
+And we'll set it equal to 5.
+
+53
+00:02:01,690 --> 00:02:03,815
+And let's say we want
+to subtract y by 1.
+
+54
+00:02:03,815 --> 00:02:05,285
+We could do y = y- 1.
+
+55
+00:02:05,285 --> 00:02:07,455
+And that's going to give us 4.
+
+56
+00:02:07,455 --> 00:02:09,965
+That's going to do what we want.
+
+57
+00:02:09,965 --> 00:02:13,925
+But we can also write y-- which
+is the decrement operator.
+
+58
+00:02:13,925 --> 00:02:16,435
+And it's going to do the same thing for
+us.
+
+59
+00:02:16,435 --> 00:02:17,370
+So, do y--.
+
+60
+00:02:17,370 --> 00:02:19,230
+Again, this one behaves similar to ++.
+
+61
+00:02:19,230 --> 00:02:21,515
+It's going to return the value back,
+then decrement it.
+
+62
+00:02:21,515 --> 00:02:23,380
+So we look at the value of y.
+
+63
+00:02:23,380 --> 00:02:23,900
+It's now 3.
+
+64
+00:02:23,900 --> 00:02:28,240
+We could also do something like --y.
+
+65
+00:02:28,240 --> 00:02:30,770
+Again similar to the increment operator.
+
+66
+00:02:30,770 --> 00:02:32,400
+The decrement operator
+works the same way.
+
+67
+00:02:32,400 --> 00:02:36,950
+Now a couple other shorthand things you
+can do are multiplication and division.
+
+68
+00:02:36,950 --> 00:02:40,310
+So let's create a new variable
+called z and set it equal to 10.
+
+69
+00:02:40,310 --> 00:02:44,910
+So if we want to multiply 10 by,
+let's say, 8.
+
+70
+00:02:44,910 --> 00:02:49,145
+We could say z *= 8.
+
+71
+00:02:49,145 --> 00:02:52,265
+What that's going to do is it's
+going to multiply the value of z by 8.
+
+72
+00:02:52,265 --> 00:02:54,045
+And then reassign it back to z.
+
+73
+00:02:55,145 --> 00:02:56,755
+If we do that, z is now 80.
+
+74
+00:02:56,755 --> 00:02:59,515
+And we could also do the same thing for
+division.
+
+75
+00:02:59,515 --> 00:03:02,320
+We might say, divide it by, let's say 4.
+
+76
+00:03:02,320 --> 00:03:03,960
+And that's going to give us 20.
+
+77
+00:03:03,960 --> 00:03:07,320
+So, yeah, there are a lot of
+shorthand ways for doing arithmetic.
+
+78
+00:03:07,320 --> 00:03:09,700
+They're going to come in handy as
+you continue to write longer and
+
+79
+00:03:09,700 --> 00:03:11,160
+longer programs.
+
+80
+00:03:11,160 --> 00:03:12,590
+And practice using them in your loops.
+
+81
+00:03:12,590 --> 00:03:17,644
+So, instead of writing x = x + 1,
+we can do x++.
+1
+00:00:00,660 --> 00:00:03,670
+Loops are a fundamental topic for
+any programming language.
+
+2
+00:00:03,670 --> 00:00:05,250
+So make sure you're
+comfortable of loops,
+
+3
+00:00:05,250 --> 00:00:08,157
+because you'll be using
+them all the time.
+
+4
+00:00:08,157 --> 00:00:10,810
+&gt;&gt; Loops are a really cool
+feature of the language, but
+
+5
+00:00:10,810 --> 00:00:13,470
+you know what might be even better?
+
+6
+00:00:13,470 --> 00:00:14,660
+Functions.
+
+7
+00:00:14,660 --> 00:00:16,170
+&gt;&gt; Functions are awesome.
+
+8
+00:00:16,170 --> 00:00:17,690
+They let you group lines
+of code together and
+
+9
+00:00:17,690 --> 00:00:19,650
+run them all at the same time.
+
+10
+00:00:19,650 --> 00:00:21,770
+You might not think that
+that's anything special, but
+
+11
+00:00:21,770 --> 00:00:23,620
+wait until you check
+out the next lesson.
+
+12
+00:00:23,620 --> 00:00:25,260
+You'll be writing functions
+all over the place.
+1
+00:00:00,690 --> 00:00:04,000
+You now have the ability to control the
+flow of your JavaScript programs using
+
+2
+00:00:04,000 --> 00:00:05,870
+conditional statements and loops.
+
+3
+00:00:05,870 --> 00:00:07,140
+With just these simple tools,
+
+4
+00:00:07,140 --> 00:00:09,300
+you can already build some
+pretty impressive programs.
+
+5
+00:00:10,300 --> 00:00:13,796
+&gt;&gt; However, as the problems you
+face get more and more complex, so
+
+6
+00:00:13,796 --> 00:00:15,368
+too will the code you write.
+
+7
+00:00:15,368 --> 00:00:17,608
+But there's an easy way to fix this.
+
+8
+00:00:17,608 --> 00:00:19,444
+&gt;&gt; As the code gets longer and
+inevitably,
+
+9
+00:00:19,444 --> 00:00:22,420
+there will a code that repeats
+the same number of steps.
+
+10
+00:00:22,420 --> 00:00:25,650
+Instead of repeating the same steps
+multiple times, we can package
+
+11
+00:00:25,650 --> 00:00:29,600
+up those processes into reusable
+chunks of code called functions.
+
+12
+00:00:29,600 --> 00:00:31,140
+&gt;&gt; To understand why functions are so
+
+13
+00:00:31,140 --> 00:00:35,230
+useful, let's think about something
+you might use in your day-to-day life.
+
+14
+00:00:35,230 --> 00:00:36,570
+&gt;&gt; How about a microwave?
+
+15
+00:00:36,570 --> 00:00:38,490
+We've got one right here.
+
+16
+00:00:38,490 --> 00:00:40,540
+&gt;&gt; Yeah, that works.
+
+17
+00:00:40,540 --> 00:00:42,700
+When you use a microwave
+to heat things up.
+
+18
+00:00:42,700 --> 00:00:43,600
+&gt;&gt; Like pizza?
+
+19
+00:00:43,600 --> 00:00:46,200
+Because I hate cold pizza and we just so
+
+20
+00:00:46,200 --> 00:00:48,910
+happen to have some
+cold pizza right here.
+
+21
+00:00:50,120 --> 00:00:51,790
+&gt;&gt; Yeah, like pizza.
+
+22
+00:00:51,790 --> 00:00:56,230
+When you use a microwave to heat things
+up like pizza, you first need to
+
+23
+00:00:56,230 --> 00:01:00,490
+tell the microwave how long to heat it
+up for based on the number of slices.
+
+24
+00:01:00,490 --> 00:01:03,630
+Let's say it takes about a minute and
+a half per slice.
+
+25
+00:01:03,630 --> 00:01:06,710
+Then you need to set
+the microwave to 50% power.
+
+26
+00:01:06,710 --> 00:01:09,680
+Since you are reheating the pizza,
+not cooking it.
+
+27
+00:01:09,680 --> 00:01:16,066
+And after all that, you hit start and
+you wait, and then there's your pizza.
+
+28
+00:01:16,066 --> 00:01:17,589
+[MUSIC]
+
+29
+00:01:17,589 --> 00:01:19,735
+This method for
+heating up pizza works, but
+
+30
+00:01:19,735 --> 00:01:23,280
+it could be quite time consuming having
+to set the microwave every time.
+
+31
+00:01:24,510 --> 00:01:26,670
+Thankfully at least in our microwave,
+
+32
+00:01:26,670 --> 00:01:30,870
+there's a pizza reheat button that
+sets the power level in heating time.
+
+33
+00:01:30,870 --> 00:01:33,360
+&gt;&gt; James just needs to tell
+it how many slices he has.
+
+34
+00:01:34,640 --> 00:01:37,710
+&gt;&gt; This pizza reheat button
+works like a function.
+
+35
+00:01:37,710 --> 00:01:41,500
+Functions are just lines of code all
+packaged together that we can use and
+
+36
+00:01:41,500 --> 00:01:43,450
+reuse when we need them.
+
+37
+00:01:43,450 --> 00:01:46,030
+In most cases,
+a function is given some data,
+
+38
+00:01:46,030 --> 00:01:50,070
+performs operations on the data,
+and then returns the altered data.
+
+39
+00:01:50,070 --> 00:01:52,950
+&gt;&gt; The input you give the function or
+argument as it's usually
+
+40
+00:01:52,950 --> 00:01:55,420
+called in programming is
+the number of pizza slices.
+
+41
+00:01:56,650 --> 00:02:00,870
+The operation it performs is setting
+the power and time to reheat the pizza.
+
+42
+00:02:00,870 --> 00:02:03,590
+And it's returned output
+is the reheated pizza.
+
+43
+00:02:03,590 --> 00:02:04,710
+&gt;&gt; It's like a shortcut.
+
+44
+00:02:04,710 --> 00:02:05,610
+&gt;&gt; Exactly.
+
+45
+00:02:05,610 --> 00:02:08,990
+The pizza reheat button hides
+the steps for reheating pizza and
+
+46
+00:02:08,990 --> 00:02:12,630
+makes it easier to reheat as
+many slices of pizza as we want
+
+47
+00:02:12,630 --> 00:02:16,120
+without having to redo all
+the settings from scratch each time.
+
+48
+00:02:16,120 --> 00:02:18,300
+&gt;&gt; That's assuming all the pieces
+will fit in the microwave.
+
+49
+00:02:18,300 --> 00:02:18,510
+&gt;&gt; Right.
+1
+00:00:00,680 --> 00:00:04,939
+The ability to generalize code for a
+variety of possible inputs is a powerful
+
+2
+00:00:04,939 --> 00:00:09,730
+tool when creating easy to understand,
+non-repetitive code.
+
+3
+00:00:09,730 --> 00:00:13,220
+Take this example, here's
+a function that reverses a string.
+
+4
+00:00:14,430 --> 00:00:19,400
+You can pass in the string Julia as
+an argument and it will reverse it and
+
+5
+00:00:19,400 --> 00:00:24,310
+return ailuJ or ailuJ, who knows.
+
+6
+00:00:24,310 --> 00:00:26,760
+There are quite a few steps
+involved in this process.
+
+7
+00:00:27,810 --> 00:00:32,009
+The function has one parameter,
+a variable reverseMe,
+
+8
+00:00:32,009 --> 00:00:36,650
+that will be used to store the argument,
+in this case the string Julia.
+
+9
+00:00:38,010 --> 00:00:41,958
+The function has a variable called
+reverse that will eventually contain
+
+10
+00:00:41,958 --> 00:00:46,280
+the final string with all
+the characters in reverse order.
+
+11
+00:00:46,280 --> 00:00:51,130
+It then loops over the reverseMe
+string from back to front and
+
+12
+00:00:51,130 --> 00:00:54,980
+adds each character in that
+order to the reversed variable.
+
+13
+00:00:54,980 --> 00:01:00,090
+Finally, it returns the result, so
+we can print it using console.log.
+
+14
+00:01:00,090 --> 00:01:04,400
+Like I said, there's a lot going
+on here, but think about it.
+
+15
+00:01:04,400 --> 00:01:08,610
+If all of these steps were not wrapped
+inside this reverseString function,
+
+16
+00:01:08,610 --> 00:01:11,180
+you would have to repeat
+this code over and
+
+17
+00:01:11,180 --> 00:01:15,980
+over and over, every time you wanted to
+reverse the characters in the string.
+
+18
+00:01:15,980 --> 00:01:21,210
+Using a function simplifies the process
+by wrapping all this code together and
+
+19
+00:01:21,210 --> 00:01:24,620
+generalizing the process for
+all strings.
+
+20
+00:01:24,620 --> 00:01:28,190
+It allows you to use and
+then even reuse the function
+
+21
+00:01:28,190 --> 00:01:33,010
+by just calling it by its name and
+passing in a different string each time.
+
+22
+00:01:33,010 --> 00:01:35,930
+Let's take a closer look
+at how functions work and
+
+23
+00:01:35,930 --> 00:01:39,130
+the different ways you can define and
+call functions in JavaScript.
+1
+00:00:00,370 --> 00:00:03,472
+So there's a couple of different ways to
+get your function to produce some sort
+
+2
+00:00:03,472 --> 00:00:03,950
+of output.
+
+3
+00:00:03,950 --> 00:00:07,724
+You should already be familiar with
+using console.log to print out messages
+
+4
+00:00:07,724 --> 00:00:11,672
+to the console, which you can do inside
+a function or directly from the console,
+
+5
+00:00:11,672 --> 00:00:15,510
+which is something we did way back in
+the very first lesson of this course.
+
+6
+00:00:15,510 --> 00:00:17,430
+Now, if you remember all
+the way back to that lesson,
+
+7
+00:00:17,430 --> 00:00:21,210
+when you first used console.log, then
+you might also remember seeing the word
+
+8
+00:00:21,210 --> 00:00:23,230
+undefined displayed after your message.
+
+9
+00:00:23,230 --> 00:00:28,340
+So the question is what is undefined,
+and where exactly is it coming from?
+
+10
+00:00:28,340 --> 00:00:31,710
+Well, in reality, undefined is
+actually what is being returned
+
+11
+00:00:31,710 --> 00:00:34,330
+back from the console.log
+function when you call it.
+
+12
+00:00:34,330 --> 00:00:39,100
+You see, any function is always going to
+return some value back to the caller.
+
+13
+00:00:39,100 --> 00:00:41,130
+If a return value is not specified,
+
+14
+00:00:41,130 --> 00:00:43,790
+then the function will just
+return back undefined.
+
+15
+00:00:43,790 --> 00:00:46,800
+When you call console.log and
+pass it a message, you are,
+
+16
+00:00:46,800 --> 00:00:50,910
+in effect, calling the console.log
+function, passing it an argument,
+
+17
+00:00:50,910 --> 00:00:54,450
+which is your message, and
+then it's returning back undefined.
+
+18
+00:00:54,450 --> 00:00:58,490
+However, the function is also printing
+out the message back to the console.
+
+19
+00:00:58,490 --> 00:01:01,480
+So the way to look at it is there's two
+different ways you can get your function
+
+20
+00:01:01,480 --> 00:01:03,160
+to produce some sort of output.
+
+21
+00:01:03,160 --> 00:01:05,480
+The first way is printing
+messages using console.log.
+
+22
+00:01:05,480 --> 00:01:08,340
+And the second way is by
+using the return keyword and
+
+23
+00:01:08,340 --> 00:01:11,110
+a value to return back
+some value to the caller.
+
+24
+00:01:11,110 --> 00:01:14,360
+Two important things to point out
+here is that the return keyword
+
+25
+00:01:14,360 --> 00:01:17,400
+will be used to stop
+the execution of a function, and
+
+26
+00:01:17,400 --> 00:01:20,990
+it's going to return
+a value back to the caller.
+
+27
+00:01:20,990 --> 00:01:24,150
+If nothing is defined as
+a value to be returned back,
+
+28
+00:01:24,150 --> 00:01:26,630
+then undefined is going to be
+returned back automatically.
+
+29
+00:01:26,630 --> 00:01:29,240
+Now, if that didn't make any sense,
+let's look at some code, and
+
+30
+00:01:29,240 --> 00:01:31,320
+hopefully it will become
+a little more clear.
+
+31
+00:01:31,320 --> 00:01:34,880
+Now, one thing to keep in mind as
+I do this is that console.log and
+
+32
+00:01:34,880 --> 00:01:36,940
+return are not the same thing.
+
+33
+00:01:36,940 --> 00:01:39,350
+So this example should show the key
+difference between the two.
+
+34
+00:01:39,350 --> 00:01:42,300
+All right, so I've got a function
+here that I've written
+
+35
+00:01:42,300 --> 00:01:45,290
+to tell me if an integer greater
+than two is a prime number.
+
+36
+00:01:45,290 --> 00:01:49,180
+Now, if you're not familiar with
+prime numbers, a number is basically
+
+37
+00:01:49,180 --> 00:01:53,735
+prime if it can't be divided by any
+other numbers besides itself and one.
+
+38
+00:01:53,735 --> 00:01:57,080
+That's not a super formal definition for
+a prime number, but stay with me.
+
+39
+00:01:57,080 --> 00:02:01,090
+The important thing here is that you see
+the difference between console.log and
+
+40
+00:02:01,090 --> 00:02:01,650
+return.
+
+41
+00:02:01,650 --> 00:02:05,920
+So the way this function works is if
+an integer passed to the function
+
+42
+00:02:05,920 --> 00:02:08,320
+is a prime number,
+then it's going to return true.
+
+43
+00:02:08,320 --> 00:02:09,100
+It's that simple.
+
+44
+00:02:09,100 --> 00:02:12,920
+But if the number is not prime, then
+it will print to the console the first
+
+45
+00:02:12,920 --> 00:02:17,320
+number that our integer that we're
+passing, here, is divisible by, and
+
+46
+00:02:17,320 --> 00:02:19,140
+then it will return false.
+
+47
+00:02:19,140 --> 00:02:22,260
+So, again, don't worry too much
+about the details of this function.
+
+48
+00:02:22,260 --> 00:02:25,110
+But I'm going to copy it and
+paste it over into the console.
+
+49
+00:02:25,110 --> 00:02:28,280
+And then we'll run it and
+see what kind of output we get back.
+
+50
+00:02:28,280 --> 00:02:31,980
+All right, so I know 11 is a prime
+number, so let's call our function and
+
+51
+00:02:31,980 --> 00:02:33,630
+see what we get back.
+
+52
+00:02:33,630 --> 00:02:37,470
+So I'll type isPrime(11),
+and we get back true.
+
+53
+00:02:37,470 --> 00:02:39,340
+Perfect, that's what we want to see.
+
+54
+00:02:39,340 --> 00:02:40,630
+If you look at our function, that means,
+
+55
+00:02:40,630 --> 00:02:43,990
+when I passed 11 to it,
+that it started at the number 2 and
+
+56
+00:02:43,990 --> 00:02:48,470
+went all the way to the number
+10 because we're less than 11.
+
+57
+00:02:48,470 --> 00:02:50,200
+So this loop would end at number 10.
+
+58
+00:02:50,200 --> 00:02:53,840
+And it never found a number
+11 was divisible by.
+
+59
+00:02:53,840 --> 00:02:55,560
+So it never hit this
+conditional statement.
+
+60
+00:02:55,560 --> 00:02:58,260
+It never got inside this
+conditional statement, and
+
+61
+00:02:58,260 --> 00:02:59,950
+it just returned true, okay.
+
+62
+00:02:59,950 --> 00:03:01,980
+Now let's try passing it another number.
+
+63
+00:03:01,980 --> 00:03:06,120
+So how about 49 because
+49 is an odd number.
+
+64
+00:03:06,120 --> 00:03:07,687
+It's kind of weird, and
+
+65
+00:03:07,687 --> 00:03:11,513
+I can't really remember if it's
+divisible by seven or not.
+
+66
+00:03:11,513 --> 00:03:14,565
+So, okay, cool.
+
+67
+00:03:14,565 --> 00:03:19,412
+So it is divisible by 7, and
+we get the return value of false.
+
+68
+00:03:19,412 --> 00:03:23,132
+Again, if you look at our function
+that means when I passed 49 to it,
+
+69
+00:03:23,132 --> 00:03:24,982
+that we started at 2 and looped until 7.
+
+70
+00:03:24,982 --> 00:03:30,292
+And when the loop reached 7,
+our condition finally evaluated to true.
+
+71
+00:03:30,292 --> 00:03:34,130
+So once that happened, it printed 49 is
+
+72
+00:03:34,130 --> 00:03:38,580
+divisible by 7 to the console,
+and then it returned false.
+
+73
+00:03:38,580 --> 00:03:41,913
+Now the key thing here is that when
+this return statement was called,
+
+74
+00:03:41,913 --> 00:03:44,569
+this return false,
+our function completely exited.
+
+75
+00:03:44,569 --> 00:03:49,367
+It didn't keep looping over more numbers
+to find out if 49 was divisible by 8,
+
+76
+00:03:49,367 --> 00:03:50,720
+9, 10, and so on.
+
+77
+00:03:50,720 --> 00:03:51,637
+It printed this out.
+
+78
+00:03:51,637 --> 00:03:54,251
+And then, once our function
+hit the return statement,
+
+79
+00:03:54,251 --> 00:03:57,020
+completely exited the function,
+we were done.
+
+80
+00:03:57,020 --> 00:04:00,851
+So let's recap, biggest takeaways here
+are that a function is always going to
+
+81
+00:04:00,851 --> 00:04:02,195
+return something, okay.
+
+82
+00:04:02,195 --> 00:04:04,469
+Let me remove these, return.
+
+83
+00:04:04,469 --> 00:04:07,825
+And let's run our function again without
+the return statements in there and
+
+84
+00:04:07,825 --> 00:04:08,986
+see what happens, okay.
+
+85
+00:04:08,986 --> 00:04:11,169
+So now I've remove the returns.
+
+86
+00:04:11,169 --> 00:04:14,269
+And let's call isPrime,
+and we'll do 49 again.
+
+87
+00:04:14,269 --> 00:04:18,277
+So it still prints out our statement
+that 49 is divisible by 7.
+
+88
+00:04:18,277 --> 00:04:22,279
+And it looks like it's not divisible by
+anything else either because it would've
+
+89
+00:04:22,279 --> 00:04:25,759
+continued to loop here and go 8,
+9, 10, all the way up until 48.
+
+90
+00:04:25,759 --> 00:04:28,074
+But you'll see that here
+it didn't return anything,
+
+91
+00:04:28,074 --> 00:04:29,340
+it just returned undefined.
+
+92
+00:04:29,340 --> 00:04:31,560
+So if you don't specify
+any sort of return,
+
+93
+00:04:31,560 --> 00:04:34,984
+then your function's always just
+going to return back as undefined.
+
+94
+00:04:34,984 --> 00:04:38,936
+So the second thing to remember is that
+console.log is not the same thing as
+
+95
+00:04:38,936 --> 00:04:40,085
+a return statement.
+
+96
+00:04:40,085 --> 00:04:43,825
+So console.log is great for printing
+out values to test your code and
+
+97
+00:04:43,825 --> 00:04:46,405
+giving you helpful feedback, but
+it's not a return statement.
+1
+00:00:00,690 --> 00:00:03,065
+Let's take a moment to talk about scope.
+
+2
+00:00:03,065 --> 00:00:06,950
+Apart from regular syntax errors, scope
+will be at the heart of many coding bugs
+
+3
+00:00:06,950 --> 00:00:10,145
+you run into in pretty much
+any programming language.
+
+4
+00:00:10,145 --> 00:00:12,050
+When programmers talk about scope,
+
+5
+00:00:12,050 --> 00:00:16,219
+they're talking about the part of the
+program where a particular identifier,
+
+6
+00:00:16,219 --> 00:00:21,070
+such as a variable or a function name,
+is visible or accessible.
+
+7
+00:00:21,070 --> 00:00:25,470
+Trying to figure out if something
+is in scope can be tricky at first.
+
+8
+00:00:25,470 --> 00:00:26,740
+So let's start with an analogy.
+
+9
+00:00:28,370 --> 00:00:28,900
+&gt;&gt; Hey.
+
+10
+00:00:28,900 --> 00:00:29,480
+&gt;&gt; Hey.
+
+11
+00:00:29,480 --> 00:00:32,360
+&gt;&gt; Do you know where I can find
+the book Great Expectations?
+
+12
+00:00:32,360 --> 00:00:35,330
+&gt;&gt; Yeah, that's in the classic
+literature section, come follow me.
+
+13
+00:00:35,330 --> 00:00:35,730
+&gt;&gt; Perfect.
+
+14
+00:00:38,630 --> 00:00:41,890
+&gt;&gt; In the example you just saw,
+James was able to get information about
+
+15
+00:00:41,890 --> 00:00:45,890
+the book he wanted because he asked for
+the book while he was in the library.
+
+16
+00:00:45,890 --> 00:00:49,900
+You could say that the information
+about where the book was is in scope.
+
+17
+00:00:51,320 --> 00:00:54,730
+&gt;&gt; Hey, I'm looking for
+this book, Great Expectations.
+
+18
+00:00:54,730 --> 00:00:57,120
+Do you know where I could find it?
+
+19
+00:00:57,120 --> 00:00:58,482
+&gt;&gt; Yeah,
+I mean the library is right here.
+
+20
+00:00:58,482 --> 00:01:00,470
+[MUSIC]
+
+21
+00:01:00,470 --> 00:01:01,790
+I don't know why you're asking me.
+
+22
+00:01:02,860 --> 00:01:05,427
+&gt;&gt; Right, yeah, makes a lot of sense.
+
+23
+00:01:05,427 --> 00:01:08,066
+[MUSIC]
+
+24
+00:01:08,066 --> 00:01:09,361
+&gt;&gt; In the second example,
+
+25
+00:01:09,361 --> 00:01:12,989
+when James was outside the library,
+the information he wanted and
+
+26
+00:01:12,989 --> 00:01:17,940
+where he was requesting the information
+from, was no longer in the same scope.
+
+27
+00:01:17,940 --> 00:01:19,660
+So he couldn't find the book, and
+
+28
+00:01:19,660 --> 00:01:22,580
+he couldn't really ask anyone to give
+him information about how to find it.
+1
+00:00:00,470 --> 00:00:02,450
+Developer tools allow you to debug and
+
+2
+00:00:02,450 --> 00:00:05,310
+test out your ideas
+directly in the browser.
+
+3
+00:00:05,310 --> 00:00:08,119
+If you're familiar with HTML or CSS,
+
+4
+00:00:08,119 --> 00:00:11,750
+you may have used developer tools to
+experiment with the style of a webpage.
+
+5
+00:00:11,750 --> 00:00:14,110
+But you can also use it with JavaScript.
+
+6
+00:00:14,110 --> 00:00:17,030
+&gt;&gt; Developer tools are often
+used as a sandbox.
+
+7
+00:00:17,030 --> 00:00:17,810
+In other words,
+
+8
+00:00:17,810 --> 00:00:22,570
+a place to mess around with any code
+without any long-term consequences.
+
+9
+00:00:22,570 --> 00:00:25,610
+You can use developer tools to
+debug problem you run in to or
+
+10
+00:00:25,610 --> 00:00:28,030
+to test a piece of code
+you've just learned.
+
+11
+00:00:28,030 --> 00:00:30,540
+If you open any website
+that uses JavaScript,
+
+12
+00:00:30,540 --> 00:00:34,130
+the console will tell you if there any
+warnings or errors on the page and
+
+13
+00:00:34,130 --> 00:00:37,625
+will also display any output,
+print it with console.log.
+
+14
+00:00:37,625 --> 00:00:40,875
+&gt;&gt; Note that anytime you're using
+the console on these course,
+
+15
+00:00:40,875 --> 00:00:44,405
+you might see some errors or
+warnings from the site you're visiting.
+
+16
+00:00:44,405 --> 00:00:46,835
+That's okay, this is very common and
+
+17
+00:00:46,835 --> 00:00:49,045
+will not affect the code that
+you right in these course.
+1
+00:00:00,400 --> 00:00:04,800
+In JavaScript you have two different
+kinds of scope, global scope and
+
+2
+00:00:04,800 --> 00:00:06,470
+function scope.
+
+3
+00:00:06,470 --> 00:00:10,260
+If you define an identifier
+outside of all of your functions
+
+4
+00:00:10,260 --> 00:00:13,260
+it is considered part
+of the global scope.
+
+5
+00:00:13,260 --> 00:00:16,560
+That means the variable can be accessed
+everywhere within the program.
+
+6
+00:00:16,560 --> 00:00:18,450
+It is available globally.
+
+7
+00:00:18,450 --> 00:00:23,050
+All functions in your program can access
+variables defined in global scope.
+
+8
+00:00:23,050 --> 00:00:26,940
+On the other hand,
+you also have function scope.
+
+9
+00:00:26,940 --> 00:00:31,820
+If an identifier is defined inside of a
+function, it will be visible everywhere
+
+10
+00:00:31,820 --> 00:00:37,030
+inside that function even inside
+other functions inside that function.
+
+11
+00:00:37,030 --> 00:00:42,360
+In this example here, the variable
+james is defined in global scope.
+
+12
+00:00:43,370 --> 00:00:46,758
+The variable librarian,
+has fiunction scope.
+
+13
+00:00:46,758 --> 00:00:49,840
+And it's accessible in both
+the library function and
+
+14
+00:00:49,840 --> 00:00:52,120
+the classic literature function.
+
+15
+00:00:52,120 --> 00:00:54,950
+The book also has function scope,
+
+16
+00:00:54,950 --> 00:00:58,510
+but it's only visible in
+the classic literature function.
+
+17
+00:00:59,770 --> 00:01:03,330
+If you try to access the book variable
+outside of the classic literature
+
+18
+00:01:03,330 --> 00:01:06,100
+function, you will get
+a reference error.
+
+19
+00:01:07,120 --> 00:01:10,980
+The way this works is,
+when the JavaScript engine tries to find
+
+20
+00:01:10,980 --> 00:01:15,160
+an identifier,
+let's say the James variable here.
+
+21
+00:01:15,160 --> 00:01:20,100
+It first look to see if that identifiers
+define than the current function and
+
+22
+00:01:20,100 --> 00:01:23,310
+if it finds it there then
+it's job is done, but
+
+23
+00:01:23,310 --> 00:01:27,520
+if it can't find it in the current
+function it then moves out one level
+
+24
+00:01:29,360 --> 00:01:30,670
+and then another level,
+and then another level.
+
+25
+00:01:30,670 --> 00:01:35,150
+And it keeps moving to the outer
+functions until it's no longer
+
+26
+00:01:35,150 --> 00:01:36,470
+in a function.
+
+27
+00:01:36,470 --> 00:01:39,410
+That means it has reached
+the global scope.
+
+28
+00:01:39,410 --> 00:01:43,310
+If the JavaScript engine checks all of
+the outer functions and global scope,
+
+29
+00:01:43,310 --> 00:01:48,250
+and it still can't find the identifier
+then it will return an error.
+
+30
+00:01:48,250 --> 00:01:50,950
+Here it did find the identifier.
+
+31
+00:01:50,950 --> 00:01:53,030
+James out there in global scope.
+
+32
+00:01:53,030 --> 00:01:56,060
+Now that you have
+the basics of global and
+
+33
+00:01:56,060 --> 00:01:58,970
+function scope, let's take a moment
+to practice what you've learned.
+1
+00:00:00,480 --> 00:00:01,810
+Scope can be a tricky subject,
+
+2
+00:00:01,810 --> 00:00:05,030
+especially when you're bouncing
+between global and function scope.
+
+3
+00:00:05,030 --> 00:00:08,870
+One of the gotchas scope can result
+in is called scope overriding, or
+
+4
+00:00:08,870 --> 00:00:09,860
+shadowing.
+
+5
+00:00:09,860 --> 00:00:10,840
+To show you how this works and
+
+6
+00:00:10,840 --> 00:00:14,200
+how you can avoid it, let's take
+a look at the following code example.
+
+7
+00:00:14,200 --> 00:00:17,450
+Here we have the same variable
+bookTitle being assigned values
+
+8
+00:00:17,450 --> 00:00:19,170
+in two different scopes.
+
+9
+00:00:19,170 --> 00:00:23,290
+The bookTitle in the global scope is
+assigned the value Le Petit Prince, and
+
+10
+00:00:23,290 --> 00:00:27,200
+the book title in this function scope is
+assigned the value The Little Prince.
+
+11
+00:00:28,280 --> 00:00:33,170
+If we print out the value of bookTitle
+at each part of this program you'll see
+
+12
+00:00:33,170 --> 00:00:37,930
+that in the final console.log statement
+that The Little Prince is printed out.
+
+13
+00:00:37,930 --> 00:00:40,470
+However, at this point in the code
+
+14
+00:00:40,470 --> 00:00:45,100
+we're no longer in the function scope
+of the displayBookEnglish function.
+
+15
+00:00:45,100 --> 00:00:50,630
+So why is the book title Le Petit Prince
+not being printed instead?
+
+16
+00:00:50,630 --> 00:00:55,270
+Well, this is a classic case of
+scope overriding or shadowing.
+
+17
+00:00:55,270 --> 00:00:58,500
+When we reach the fifth line of
+this code the book title variable
+
+18
+00:00:58,500 --> 00:01:01,690
+from the global scope is actually
+being reassigned with the value
+
+19
+00:01:01,690 --> 00:01:03,250
+The Little Prince.
+
+20
+00:01:03,250 --> 00:01:08,880
+So the book title here is being
+reassigned by the book title here.
+
+21
+00:01:08,880 --> 00:01:12,494
+That means when we finally reach
+the last console.log in this code,
+
+22
+00:01:12,494 --> 00:01:16,320
+bookTitle in the global
+scope has been changed
+
+23
+00:01:16,320 --> 00:01:18,490
+even though we exited
+the function scope.
+
+24
+00:01:18,490 --> 00:01:22,270
+To prevent this from happening, we are
+going to simply declare a new variable
+
+25
+00:01:22,270 --> 00:01:25,060
+inside the displayBookEnglish function.
+
+26
+00:01:25,060 --> 00:01:27,007
+So instead of reassigning bookTitle,
+
+27
+00:01:27,007 --> 00:01:29,192
+we're going to create
+a different variable.
+
+28
+00:01:29,192 --> 00:01:33,580
+So now we've got a variable
+inside displayBookEnglish that is
+
+29
+00:01:33,580 --> 00:01:36,550
+relative at this function scope.
+
+30
+00:01:36,550 --> 00:01:42,010
+And our bookTitle that's declared in
+the global scope will remain unchanged.
+
+31
+00:01:42,010 --> 00:01:45,470
+And that way, when we reach the tenth
+line in our code and we print it out for
+
+32
+00:01:45,470 --> 00:01:48,850
+the third time, it's going to print
+out what we expect, Le Petit Prince.
+1
+00:00:00,540 --> 00:00:01,780
+In most programming languages,
+
+2
+00:00:01,780 --> 00:00:04,250
+you have to declare a function
+before you can call it.
+
+3
+00:00:04,250 --> 00:00:07,460
+Basically the idea is that code's
+read from top to bottom, so
+
+4
+00:00:07,460 --> 00:00:11,060
+there's no way that we should be able
+to call this findAverage function
+
+5
+00:00:11,060 --> 00:00:12,690
+if it hasn't even been declared yet.
+
+6
+00:00:12,690 --> 00:00:16,865
+Like literally, how can we call
+findAverage when the function
+
+7
+00:00:16,865 --> 00:00:20,675
+is being declared lower than when
+the call's happening in the code.
+
+8
+00:00:20,675 --> 00:00:22,465
+So this shouldn't work, right?
+
+9
+00:00:22,465 --> 00:00:24,555
+Well, actually it does and
+
+10
+00:00:24,555 --> 00:00:28,490
+this is because of one really corky
+feature in JavaScript called hoisting.
+
+11
+00:00:28,490 --> 00:00:31,240
+And it has to do with how JavaScript
+code is being interpreted.
+
+12
+00:00:31,240 --> 00:00:34,750
+Basically before any code is executed,
+
+13
+00:00:34,750 --> 00:00:39,640
+all function declarations are hoisted
+to the top of the current scope.
+
+14
+00:00:39,640 --> 00:00:41,190
+I know, this is weird, right?
+
+15
+00:00:41,190 --> 00:00:44,750
+Now just to be clear, the code you
+write is actually not going to change.
+
+16
+00:00:44,750 --> 00:00:47,640
+The code's still going to look
+exactly how you wrote it.
+
+17
+00:00:47,640 --> 00:00:50,000
+Its just when the code is being
+interpreted when the function of
+
+18
+00:00:50,000 --> 00:00:52,120
+declaration is actually
+getting hoisted to the top.
+
+19
+00:00:52,120 --> 00:00:55,880
+So still going to look the same and this
+function is actually going to get called
+
+20
+00:00:55,880 --> 00:00:57,520
+and its going to return
+back the correct value.
+
+21
+00:00:58,600 --> 00:01:01,130
+Hoisting also happens with
+variable declarations,
+
+22
+00:01:01,130 --> 00:01:03,200
+let's take a look at
+this simple example.
+
+23
+00:01:03,200 --> 00:01:06,610
+If we call the sayGreeting function
+the way that it exists now,
+
+24
+00:01:06,610 --> 00:01:08,560
+we're going to get back
+a reference error and
+
+25
+00:01:08,560 --> 00:01:12,550
+that's because the variable greeting has
+not been defined or declared anywhere.
+
+26
+00:01:12,550 --> 00:01:15,323
+How can we print out greeting
+if it doesn't exist?
+
+27
+00:01:15,323 --> 00:01:18,189
+To fix this error, we can declare
+greeting pretty much anywhere in
+
+28
+00:01:18,189 --> 00:01:19,725
+the function because ultimately,
+
+29
+00:01:19,725 --> 00:01:23,480
+we know that it's going to get hoisted
+to the top of the function scope.
+
+30
+00:01:23,480 --> 00:01:26,504
+For example, if I was to
+declare greeting on line three,
+
+31
+00:01:26,504 --> 00:01:29,528
+we know that ultimately when
+the code gets interpreted,
+
+32
+00:01:29,528 --> 00:01:32,247
+it's going to get hoisted
+to the top of the function.
+
+33
+00:01:32,247 --> 00:01:36,124
+Of course, when this code is ran it
+would still look the exact same way as I
+
+34
+00:01:36,124 --> 00:01:39,320
+wrote it, but now this time
+it's printing out undefined.
+
+35
+00:01:40,320 --> 00:01:42,890
+So I guess that makes sense because
+
+36
+00:01:42,890 --> 00:01:45,800
+we haven't really given
+greeting a value yet.
+
+37
+00:01:45,800 --> 00:01:47,970
+So let's try to give it a value and
+then see what happens.
+
+38
+00:01:47,970 --> 00:01:52,454
+So instead of just greeting by itself,
+let's assign the greeting and
+
+39
+00:01:52,454 --> 00:01:54,180
+the string hello.
+
+40
+00:01:54,180 --> 00:01:56,137
+Okay, so we get it undefined again.
+
+41
+00:01:56,137 --> 00:01:58,780
+This is actually a bug
+because of hoisting.
+
+42
+00:01:58,780 --> 00:02:03,230
+The variable greeting is getting hoisted
+to the top of the function scope, but
+
+43
+00:02:03,230 --> 00:02:06,470
+the assignment is staying
+exactly where it is.
+
+44
+00:02:06,470 --> 00:02:09,405
+Because the variable declaration
+is getting hosted to the top,
+
+45
+00:02:09,405 --> 00:02:11,918
+gets declared here but
+the value's still undefined.
+
+46
+00:02:11,918 --> 00:02:15,720
+And then when we print it,
+it's giving us back undefined.
+
+47
+00:02:15,720 --> 00:02:20,090
+So the moral of the story here is that
+to avoid bugs like this JavaScript
+
+48
+00:02:20,090 --> 00:02:23,190
+programmers usually declare functions
+at the top of their scripts, and
+
+49
+00:02:23,190 --> 00:02:25,240
+variables at the top of their functions.
+
+50
+00:02:25,240 --> 00:02:28,150
+That way the way the code looks,
+and the way the code behaves,
+
+51
+00:02:28,150 --> 00:02:29,330
+are consistent with each other.
+1
+00:00:00,180 --> 00:00:03,370
+Remember how you could store pretty
+much anything you want in a variable?
+
+2
+00:00:03,370 --> 00:00:06,810
+Well, in JavaScript you can also
+store functions in variables.
+
+3
+00:00:06,810 --> 00:00:09,230
+When a function is stored
+inside of a variable,
+
+4
+00:00:09,230 --> 00:00:11,130
+it's called a function expression.
+
+5
+00:00:11,130 --> 00:00:14,220
+Notice how the function
+keyword no longer has a name.
+
+6
+00:00:14,220 --> 00:00:16,510
+This is called an anonymous function.
+
+7
+00:00:16,510 --> 00:00:19,630
+Because you stored the function
+in a variable called catSays,
+
+8
+00:00:19,630 --> 00:00:23,730
+naming the function at that
+point is pretty redundant.
+
+9
+00:00:23,730 --> 00:00:27,650
+If you need to access that function,
+you can just use the variable name.
+
+10
+00:00:27,650 --> 00:00:31,930
+This line of code here, for example,
+will return the function back to you.
+
+11
+00:00:31,930 --> 00:00:35,980
+Just add parenthesis after catSays
+to invoke the function and call it.
+
+12
+00:00:36,990 --> 00:00:40,210
+So now you have two ways to
+define a function in JavaScript,
+
+13
+00:00:40,210 --> 00:00:43,630
+a Function Declaration and
+a Function Expression.
+
+14
+00:00:43,630 --> 00:00:46,920
+Deciding when to use one or the other
+can depend on a bunch of things.
+
+15
+00:00:46,920 --> 00:00:49,500
+But one thing you'll
+probably need to consider
+
+16
+00:00:49,500 --> 00:00:52,680
+is a quirky behavior in
+JavaScript called hoisting.
+
+17
+00:00:52,680 --> 00:00:54,280
+Let's take a closer
+look at what that is.
+1
+00:00:00,000 --> 00:00:10,000
+[BLANK_AUDIO]
+1
+00:00:00,780 --> 00:00:04,133
+You so how you can write
+an anonymous function expression,
+
+2
+00:00:04,133 --> 00:00:05,950
+store it in a variable.
+
+3
+00:00:05,950 --> 00:00:08,600
+And then,
+call it using the variable name.
+
+4
+00:00:08,600 --> 00:00:11,213
+You can also create name
+function expression,
+
+5
+00:00:11,213 --> 00:00:13,880
+where the function actually has a name.
+
+6
+00:00:13,880 --> 00:00:17,330
+Like this one, for example,
+the function is called Movie.
+
+7
+00:00:18,450 --> 00:00:21,330
+Calling the function is
+no different than before.
+
+8
+00:00:21,330 --> 00:00:24,940
+Just use the variable name,
+not the function's name to call it.
+
+9
+00:00:26,010 --> 00:00:29,600
+If you did try to call this function by
+its name, you'd get a reference error.
+1
+00:00:00,260 --> 00:00:02,060
+Congrats, you made it.
+
+2
+00:00:02,060 --> 00:00:04,720
+Functions can be a bit tricky at first,
+but they're so
+
+3
+00:00:04,720 --> 00:00:06,560
+fundamental in programming.
+
+4
+00:00:06,560 --> 00:00:09,470
+&gt;&gt; You learned how to write function
+declarations to package up bits of code
+
+5
+00:00:09,470 --> 00:00:11,320
+to use inside your programs.
+
+6
+00:00:11,320 --> 00:00:14,050
+And you learned different ways
+to write function expressions so
+
+7
+00:00:14,050 --> 00:00:17,060
+you can easily pass functions
+to other functions.
+
+8
+00:00:17,060 --> 00:00:19,110
+&gt;&gt; Next, we're going to look at arrays.
+
+9
+00:00:19,110 --> 00:00:21,790
+Arrays are a powerful
+JavaScript data type
+
+10
+00:00:21,790 --> 00:00:25,540
+that will allow you to store data into
+a single organized data structure.
+
+11
+00:00:25,540 --> 00:00:26,110
+&gt;&gt; Go check it out.
+1
+00:00:01,000 --> 00:00:01,560
+Welcome back.
+
+2
+00:00:01,560 --> 00:00:05,110
+In the last lesson,
+you learned all about functions.
+
+3
+00:00:05,110 --> 00:00:07,280
+Functions are great for
+simplifying your code and
+
+4
+00:00:07,280 --> 00:00:10,140
+creating reuseable
+shortcuts in your programs.
+
+5
+00:00:10,140 --> 00:00:13,302
+But let's switch gears for
+a moment to talk more about data.
+
+6
+00:00:13,302 --> 00:00:14,490
+&gt;&gt; Up until this point,
+
+7
+00:00:14,490 --> 00:00:17,730
+we've only worked with a few
+pieces of data at a time.
+
+8
+00:00:17,730 --> 00:00:22,010
+A couple of numbers, some strings,
+and maybe a few booleans.
+
+9
+00:00:22,010 --> 00:00:24,620
+But what happens when you want to
+work with a lot of data all at once?
+
+10
+00:00:25,800 --> 00:00:28,532
+Let's say we own a doughnut shop.
+
+11
+00:00:28,532 --> 00:00:31,184
+And let's say we need a way to
+keep track of all the doughnuts we
+
+12
+00:00:31,184 --> 00:00:32,980
+could sell at our shop.
+
+13
+00:00:32,980 --> 00:00:37,061
+We've got glazed doughnuts, chocolate
+frosted doughnuts, Boston cream
+
+14
+00:00:37,061 --> 00:00:41,268
+doughnuts, powdered doughnuts,
+sprinkled doughnuts, maple doughnuts,
+
+15
+00:00:41,268 --> 00:00:46,410
+coconut doughnuts, coconut jelly
+doughnuts, and finally, doughnut holes.
+
+16
+00:00:46,410 --> 00:00:48,612
+Hey, James, wake up.
+
+17
+00:00:48,612 --> 00:00:50,750
+&gt;&gt; Right, a lot of doughnuts.
+
+18
+00:00:50,750 --> 00:00:52,020
+&gt;&gt; Exactly, and
+
+19
+00:00:52,020 --> 00:00:55,230
+wouldn't it be nice if there were a way
+to keep track of all this information?
+
+20
+00:00:55,230 --> 00:00:58,086
+A way to store it all in one place or
+in one variable,
+
+21
+00:00:58,086 --> 00:01:00,889
+where we could keep a list
+of all these doughnuts.
+
+22
+00:01:00,889 --> 00:01:04,390
+&gt;&gt; Well, we can do just that with
+a data structure called an array.
+
+23
+00:01:04,390 --> 00:01:08,000
+Arrays are a data structure that
+can hold multiple data values,
+
+24
+00:01:08,000 --> 00:01:09,520
+kind of like a list.
+
+25
+00:01:09,520 --> 00:01:13,350
+In this section, you'll explore how to
+create arrays, how to use arrays, and
+
+26
+00:01:13,350 --> 00:01:15,200
+how arrays are structured.
+
+27
+00:01:15,200 --> 00:01:17,930
+To start, let's look at how
+we could create an array
+
+28
+00:01:17,930 --> 00:01:19,840
+to keep track of all
+the doughnuts in our shop.
+1
+00:00:00,670 --> 00:00:04,010
+So as you can tell we've got a lot of
+donuts that we've gotta keep up with at
+
+2
+00:00:04,010 --> 00:00:05,120
+our shop.
+
+3
+00:00:05,120 --> 00:00:08,760
+And trying to organize all
+them is going to be a problem.
+
+4
+00:00:08,760 --> 00:00:13,185
+We could create individual variables
+to keep track of each donut, but
+
+5
+00:00:13,185 --> 00:00:16,184
+that's going to mean multiple variables,
+not so
+
+6
+00:00:16,184 --> 00:00:19,499
+great variable names, and
+just a whole lot of mess.
+
+7
+00:00:19,499 --> 00:00:21,780
+It's not exactly the best solution.
+
+8
+00:00:21,780 --> 00:00:27,200
+Instead, to make this easier, we can
+use a data structure called an Array.
+
+9
+00:00:27,200 --> 00:00:31,270
+An array is a data structure that we
+can use to store multiple values.
+
+10
+00:00:31,270 --> 00:00:33,940
+Also, one thing that makes
+arrays really awesome
+
+11
+00:00:33,940 --> 00:00:36,800
+is that the values we store
+in an array are ordered.
+
+12
+00:00:36,800 --> 00:00:39,680
+You can almost think of
+an array like a numbered list,
+
+13
+00:00:39,680 --> 00:00:42,150
+where each item in
+the list has a number.
+
+14
+00:00:42,150 --> 00:00:45,920
+And we can use that number to refer
+back to the item when we need it,
+
+15
+00:00:45,920 --> 00:00:49,618
+with the one big difference being that
+arrays will start at 0 instead of
+
+16
+00:00:49,618 --> 00:00:53,320
+starting at 1, but we'll look
+at that more in just a second.
+
+17
+00:00:53,320 --> 00:00:56,881
+An array should work perfectly for
+organizing all of our donuts,
+
+18
+00:00:56,881 --> 00:00:58,119
+so let's create one.
+
+19
+00:00:58,119 --> 00:01:00,545
+All right, so
+here I've got all of our donuts, but
+
+20
+00:01:00,545 --> 00:01:02,929
+they're represented as
+individual variables.
+
+21
+00:01:02,929 --> 00:01:04,041
+So we need to fix that,
+
+22
+00:01:04,041 --> 00:01:06,862
+if we're going to create an array
+to hold all of our donuts.
+
+23
+00:01:06,862 --> 00:01:10,432
+So the first thing I'm going to do is
+I'm just going to select all of these
+
+24
+00:01:10,432 --> 00:01:13,753
+variables and we're doing
+a little keyboard shortcut magic,
+
+25
+00:01:13,753 --> 00:01:17,760
+I'll get rid of these semicolons,
+I'm going to jump to the front.
+
+26
+00:01:17,760 --> 00:01:21,030
+Get rid of these variable
+declarations and the equals sign.
+
+27
+00:01:21,030 --> 00:01:23,030
+So we're left with just the strings.
+
+28
+00:01:23,030 --> 00:01:23,540
+Okay, perfect.
+
+29
+00:01:23,540 --> 00:01:25,680
+So that's number one.
+
+30
+00:01:25,680 --> 00:01:28,370
+The next step is we need to
+create a variable that can
+
+31
+00:01:28,370 --> 00:01:31,910
+hold all these strings and
+it's going to be our donuts array.
+
+32
+00:01:31,910 --> 00:01:36,220
+So to do that, I'm going to move
+those down a few spaces and
+
+33
+00:01:36,220 --> 00:01:42,239
+I'm going to say var donuts = {};,
+
+34
+00:01:42,239 --> 00:01:48,040
+so the opening and the closing
+brackets represent an empty array.
+
+35
+00:01:48,040 --> 00:01:49,970
+At this point,
+we've got an array, it's empty.
+
+36
+00:01:49,970 --> 00:01:53,525
+It doesn't have anything in it, but when
+we put the opening bracket, it says,
+
+37
+00:01:53,525 --> 00:01:54,968
+hey this variable's an array.
+
+38
+00:01:54,968 --> 00:01:58,123
+And then the closing bracket's
+going to show the end of the array,
+
+39
+00:01:58,123 --> 00:02:00,233
+so that's how we know
+that it's an array.
+
+40
+00:02:00,233 --> 00:02:03,417
+Now for the last step, what I'm
+going to do is I'm going to take all
+
+41
+00:02:03,417 --> 00:02:05,569
+these strings and
+put them into an array.
+
+42
+00:02:05,569 --> 00:02:09,687
+Now, the one thing that you need to make
+sure that you do when creating an array,
+
+43
+00:02:09,687 --> 00:02:13,510
+is that you separate each element
+in the array with a comma.
+
+44
+00:02:13,510 --> 00:02:17,680
+Now to do that, I'm going to use some
+more keyboard shortcuts here and
+
+45
+00:02:17,680 --> 00:02:21,010
+I'm going to select all of our lines and
+I'm going to put a comma at the end.
+
+46
+00:02:21,010 --> 00:02:23,470
+Another thing that I'm going to do is
+I'm going to get rid of that last comma.
+
+47
+00:02:23,470 --> 00:02:26,310
+Because chocolate donut
+holes is our last element,
+
+48
+00:02:26,310 --> 00:02:28,638
+we don't need that
+extra comma on the end.
+
+49
+00:02:28,638 --> 00:02:33,559
+All right, and we'll do one more thing,
+we'll get rid of all of this space,
+
+50
+00:02:33,559 --> 00:02:34,580
+okay.
+
+51
+00:02:34,580 --> 00:02:38,200
+And let's just cut this and
+move it in to our donuts array.
+
+52
+00:02:38,200 --> 00:02:39,100
+All right and that's it.
+1
+00:00:00,270 --> 00:00:02,469
+Let's revisit our donuts
+array from earlier.
+
+2
+00:00:02,469 --> 00:00:05,470
+If you recall,
+we created an array of strings where
+
+3
+00:00:05,470 --> 00:00:08,900
+each string represents
+a donut in our donuts array.
+
+4
+00:00:08,900 --> 00:00:11,580
+Now, another way of saying
+this is that each string or
+
+5
+00:00:11,580 --> 00:00:15,420
+donut, is an element
+in our donuts array.
+
+6
+00:00:15,420 --> 00:00:18,670
+The element is kind of an overloaded
+word because it's also used to talk
+
+7
+00:00:18,670 --> 00:00:23,460
+about HTML elements or tags but
+elements in arrays are different.
+
+8
+00:00:23,460 --> 00:00:29,090
+The word element is used to signify the
+individual pieces of data in an array.
+
+9
+00:00:29,090 --> 00:00:32,270
+Also, we have a way to access
+each element in an array
+
+10
+00:00:32,270 --> 00:00:34,940
+by referencing its
+location in the array.
+
+11
+00:00:34,940 --> 00:00:38,190
+The name that you used to refer to
+an element's location is its index.
+
+12
+00:00:39,500 --> 00:00:41,530
+If you remember back to our
+lesson on data types and
+
+13
+00:00:41,530 --> 00:00:46,360
+variables, we could refer to a specific
+character in a string by its index.
+
+14
+00:00:47,590 --> 00:00:50,040
+Arrays work the exact same way, so
+
+15
+00:00:50,040 --> 00:00:54,520
+just like strings, each element in the
+array is numbered starting from zero.
+
+16
+00:00:54,520 --> 00:00:57,400
+And we can just use those
+numbers our indices,
+
+17
+00:00:57,400 --> 00:01:00,510
+to access whatever value
+we want in the array.
+
+18
+00:01:00,510 --> 00:01:03,960
+For example, the first element
+in the donuts array is glazed,
+
+19
+00:01:03,960 --> 00:01:07,300
+the second element is chocolate frosted,
+the third element is cinnamon.
+
+20
+00:01:07,300 --> 00:01:10,960
+And this process is going to
+continue until we get to our last
+
+21
+00:01:10,960 --> 00:01:15,100
+element in the donuts array,
+which are these chocolate donuts holes.
+
+22
+00:01:15,100 --> 00:01:18,420
+Now the syntax for
+this is just the name of the array.
+
+23
+00:01:18,420 --> 00:01:20,170
+The opening and closing brackets, and
+
+24
+00:01:20,170 --> 00:01:23,270
+the index of the element
+we want to access.
+
+25
+00:01:23,270 --> 00:01:25,640
+This gives us a much
+better way to organize and
+
+26
+00:01:25,640 --> 00:01:27,590
+keep track of all
+the donuts in our shop.
+1
+00:00:00,000 --> 00:00:10,000
+[BLANK_AUDIO]
+1
+00:00:00,000 --> 00:00:10,000
+[BLANK_AUDIO]
+1
+00:00:00,740 --> 00:00:04,417
+So arrays give us a better option for
+storing information inside of
+
+2
+00:00:04,417 --> 00:00:07,319
+one neat data structure,
+but what else can they do?
+
+3
+00:00:07,319 --> 00:00:09,610
+&gt;&gt; You can actually do
+quite a bit with arrays.
+
+4
+00:00:09,610 --> 00:00:11,755
+You see,
+arrays have a number of properties and
+
+5
+00:00:11,755 --> 00:00:14,225
+methods that make them
+powerful data structures.
+
+6
+00:00:14,225 --> 00:00:16,700
+&gt;&gt; Man, properties, methods?
+
+7
+00:00:16,700 --> 00:00:20,000
+You're about to venture into some
+really awesome programming territory.
+
+8
+00:00:20,000 --> 00:00:22,900
+&gt;&gt; Yeah, things are starting
+to get really exciting.
+
+9
+00:00:22,900 --> 00:00:26,080
+You can think about properties as
+special pieces of information about
+
+10
+00:00:26,080 --> 00:00:27,680
+a data structure.
+
+11
+00:00:27,680 --> 00:00:31,880
+For example, there's a special
+property in an array called length.
+
+12
+00:00:31,880 --> 00:00:34,050
+&gt;&gt; Wait, haven't we used length before?
+
+13
+00:00:34,050 --> 00:00:35,840
+&gt;&gt; Yeah, actually we have.
+
+14
+00:00:35,840 --> 00:00:36,780
+Earlier in this course,
+
+15
+00:00:36,780 --> 00:00:40,630
+we used length with strings to get
+the number of characters in a string.
+
+16
+00:00:40,630 --> 00:00:44,440
+However, we can also use length to get
+the number of elements in an array.
+
+17
+00:00:44,440 --> 00:00:47,220
+This is useful when you want
+to loop over an array, but
+
+18
+00:00:47,220 --> 00:00:50,400
+you're not sure how many elements
+you're going to need to loop over.
+
+19
+00:00:50,400 --> 00:00:54,260
+&gt;&gt; That's right, so both strings and
+arrays use the length property.
+
+20
+00:00:54,260 --> 00:00:57,920
+&gt;&gt; Yep, and
+you've kind of seen methods before too.
+
+21
+00:00:57,920 --> 00:01:01,320
+You can think of methods like
+special predefined functions
+
+22
+00:01:01,320 --> 00:01:03,420
+that a data structure can call.
+
+23
+00:01:03,420 --> 00:01:08,503
+Some common array methods you'll see
+are reverse, which reverses the order
+
+24
+00:01:08,503 --> 00:01:13,365
+of the elements in an array, sort,
+which sorts the elements in an array.
+
+25
+00:01:13,365 --> 00:01:16,238
+And push and pop, which are two
+methods that allow us to add and
+
+26
+00:01:16,238 --> 00:01:17,740
+remove elements from an array.
+
+27
+00:01:18,840 --> 00:01:21,400
+&gt;&gt; But there are more than just
+these methods you see here.
+
+28
+00:01:21,400 --> 00:01:24,340
+For a full listing of all
+the available built-in array methods,
+
+29
+00:01:24,340 --> 00:01:27,210
+check out the link to
+the MDN documentation below.
+
+30
+00:01:27,210 --> 00:01:30,460
+&gt;&gt; As you continue through this course,
+you'll see the words property and
+
+31
+00:01:30,460 --> 00:01:34,860
+method thrown around a lot,
+especially when we get to objects.
+
+32
+00:01:34,860 --> 00:01:38,120
+Spoiler alert,
+arrays are a special kind of object.
+
+33
+00:01:38,120 --> 00:01:40,122
+But we'll get more into that later.
+
+34
+00:01:40,122 --> 00:01:41,860
+&gt;&gt; Julie Anne,
+that was supposed to be a surprise.
+
+35
+00:01:43,200 --> 00:01:44,370
+&gt;&gt; Sorry.
+
+36
+00:01:44,370 --> 00:01:47,620
+Well, for now let's look at some
+properties and methods of an array.
+1
+00:00:00,000 --> 00:00:10,000
+[BLANK_AUDIO]
+1
+00:00:00,000 --> 00:00:10,000
+[BLANK_AUDIO]
+1
+00:00:00,000 --> 00:00:10,000
+[BLANK_AUDIO]
+1
+00:00:00,400 --> 00:00:04,160
+Once you've stored data in an array,
+you then want to be able to access and
+
+2
+00:00:04,160 --> 00:00:07,460
+manipulate each element in the array
+without having to operate on
+
+3
+00:00:07,460 --> 00:00:09,660
+each element one at a time.
+
+4
+00:00:09,660 --> 00:00:12,960
+For instance, if this was our
+original donuts array and
+
+5
+00:00:12,960 --> 00:00:15,800
+we decided to make all of
+the same donut types but
+
+6
+00:00:15,800 --> 00:00:19,350
+sell them as donut holes instead,
+we could write the following code.
+
+7
+00:00:19,350 --> 00:00:23,420
+This code seems simple enough but
+it's actually pretty horrible.
+
+8
+00:00:23,420 --> 00:00:27,600
+It's repetitive and not scalable for
+large number of donuts.
+
+9
+00:00:27,600 --> 00:00:30,750
+But the good news is,
+you don't have to do this.
+
+10
+00:00:30,750 --> 00:00:33,350
+You have a better tool that
+you've seen before, loops.
+
+11
+00:00:34,370 --> 00:00:37,450
+Here's a for loop that we can use
+to loop over the array of donuts.
+
+12
+00:00:38,470 --> 00:00:39,890
+To loop over the array,
+
+13
+00:00:39,890 --> 00:00:42,960
+you can use a variable to
+represent the index in the array.
+
+14
+00:00:42,960 --> 00:00:46,390
+And then loop over that index to
+perform whatever manipulations
+
+15
+00:00:46,390 --> 00:00:47,950
+your heart desires.
+
+16
+00:00:47,950 --> 00:00:48,958
+in this example,
+
+17
+00:00:48,958 --> 00:00:52,598
+the variable i is being used to
+represent the index of the array.
+
+18
+00:00:52,598 --> 00:00:57,876
+The loop keeps going until just
+before donuts.Length is reached and
+
+19
+00:00:57,876 --> 00:01:01,974
+then donuts i is used to
+change the names in the array.
+
+20
+00:01:01,974 --> 00:01:05,919
+So, this is pretty cool but
+since we're working with an array,
+
+21
+00:01:05,919 --> 00:01:08,926
+we have something even
+better that we could use.
+
+22
+00:01:08,926 --> 00:01:13,511
+Arrays actually have a set of methods
+like can be used when looping over them.
+
+23
+00:01:13,511 --> 00:01:16,990
+Here's an example of
+a method called forEach.
+
+24
+00:01:16,990 --> 00:01:20,253
+forEach can be used to loop over
+the elements and the array.
+
+25
+00:01:20,253 --> 00:01:24,439
+myAwesomeFunction is just
+the function that you defined and
+
+26
+00:01:24,439 --> 00:01:29,460
+that will be used to perform some
+operation on each element in the array.
+
+27
+00:01:29,460 --> 00:01:34,560
+Note that myAwesomeFunction has three
+parameters, element, which refers
+
+28
+00:01:34,560 --> 00:01:39,420
+to the actual value of the element
+in the array, not the array index.
+
+29
+00:01:39,420 --> 00:01:43,780
+For the array index, we have
+a different parameter called index,
+
+30
+00:01:43,780 --> 00:01:46,440
+which refers to the elements index.
+
+31
+00:01:46,440 --> 00:01:49,668
+And finally array, which is just
+the array that you started with.
+
+32
+00:01:49,668 --> 00:01:50,282
+[BLANK_AUDIO]
+
+33
+00:01:50,282 --> 00:01:53,720
+Here's an example of for
+each with the donuts array from before.
+
+34
+00:01:53,720 --> 00:01:56,980
+See how the printDonuts function is
+passed into the for each method?
+
+35
+00:01:56,980 --> 00:02:01,300
+The for each method will execute that
+function for each element in the array.
+
+36
+00:02:01,300 --> 00:02:05,490
+You can also see that the printDonuts
+function has only one parameter,
+
+37
+00:02:05,490 --> 00:02:09,889
+donut, which corresponds to each
+donut element in the array.
+
+38
+00:02:09,889 --> 00:02:11,990
+There's no need for
+index variables here or
+
+39
+00:02:11,990 --> 00:02:15,590
+the array parameter so,
+we're going to leave those out.
+
+40
+00:02:15,590 --> 00:02:17,780
+This code is looking
+pretty good right now but
+
+41
+00:02:17,780 --> 00:02:19,710
+there's one more thing we can do.
+
+42
+00:02:19,710 --> 00:02:23,570
+Since we know that this printDonuts
+function is never really going to be use
+
+43
+00:02:23,570 --> 00:02:24,940
+anywhere else in our code,
+
+44
+00:02:24,940 --> 00:02:29,420
+we could define it as an inline
+function expression like this.
+
+45
+00:02:29,420 --> 00:02:30,760
+See, much cleaner.
+1
+00:00:00,370 --> 00:00:03,570
+There are lots of ways to loop
+over arrays in JavaScript, and
+
+2
+00:00:03,570 --> 00:00:05,810
+each way has its pros and cons.
+
+3
+00:00:05,810 --> 00:00:07,870
+For loops are very versatile and
+
+4
+00:00:07,870 --> 00:00:10,520
+give you complete control
+over the looping process.
+
+5
+00:00:10,520 --> 00:00:12,650
+You can explicitly define
+where to start and
+
+6
+00:00:12,650 --> 00:00:16,610
+stop in the array, whether you want
+to skip over values in the array, and
+
+7
+00:00:16,610 --> 00:00:19,650
+even whether you'd like to break out of
+the loop early using a break statement.
+
+8
+00:00:20,710 --> 00:00:23,285
+When in doubt, you could
+probably use a for loop to do it.
+
+9
+00:00:23,285 --> 00:00:27,470
+.forEach gives you a concise
+way of looping over an array
+
+10
+00:00:27,470 --> 00:00:31,330
+if you know you're going to be looping
+over every element from start to finish.
+
+11
+00:00:31,330 --> 00:00:34,050
+You have less versatility than
+you do with a regular for
+
+12
+00:00:34,050 --> 00:00:38,910
+loop, but you can access each
+element directly, which is nice.
+
+13
+00:00:38,910 --> 00:00:41,320
+And you don't need an index
+of an element to do that.
+
+14
+00:00:42,390 --> 00:00:46,200
+Map is one more array method you'll
+want in your JavaScript tool belt.
+
+15
+00:00:46,200 --> 00:00:49,370
+Similar to for each,
+you can define a call back function
+
+16
+00:00:49,370 --> 00:00:53,000
+that performs an operation on
+each element in the array.
+
+17
+00:00:53,000 --> 00:00:54,390
+The difference here is,
+
+18
+00:00:54,390 --> 00:00:59,180
+map returns a new array with the new
+values your function calculated.
+
+19
+00:00:59,180 --> 00:01:00,880
+So, there you have it.
+
+20
+00:01:00,880 --> 00:01:04,170
+There are tons of ways to
+iterate over a data in an array.
+
+21
+00:01:04,170 --> 00:01:07,950
+And you can check out even more of them
+by reading the Mozilla documentation.
+
+22
+00:01:07,950 --> 00:01:10,560
+But for now,
+you got three you can pull from,
+
+23
+00:01:10,560 --> 00:01:12,890
+depending on what you
+need to accomplish.
+
+24
+00:01:12,890 --> 00:01:15,120
+For loops, forEach and
+
+25
+00:01:15,120 --> 00:01:18,810
+now map, if you need to create
+a new array using your function.
+1
+00:00:00,410 --> 00:00:04,830
+So we mentioned earlier that you can
+store pretty much any data in an array.
+
+2
+00:00:04,830 --> 00:00:06,920
+You can even store arrays
+inside of an array.
+
+3
+00:00:08,350 --> 00:00:12,270
+An array of arrays can be represented
+as a grid like structure,
+
+4
+00:00:12,270 --> 00:00:15,730
+where each element of the array
+corresponds to a row of cells.
+
+5
+00:00:16,770 --> 00:00:19,820
+Iterating over a two dimensional
+array can be tricky.
+
+6
+00:00:19,820 --> 00:00:22,480
+So it's helpful to think about
+the whole thing as a grid,
+
+7
+00:00:22,480 --> 00:00:25,620
+where each row of the grid is an array,
+and
+
+8
+00:00:25,620 --> 00:00:29,030
+each of those arrays is
+an element of the larger array.
+
+9
+00:00:30,120 --> 00:00:34,082
+You can use a single loop to access each
+row of the grid, as you can see here.
+
+10
+00:00:34,082 --> 00:00:36,455
+[BLANK_AUDIO]
+
+11
+00:00:36,455 --> 00:00:40,262
+And you can use nested loops,
+or a loop inside of a loop,
+
+12
+00:00:40,262 --> 00:00:44,130
+to loop over each elements
+of each of those rows.
+
+13
+00:00:44,130 --> 00:00:48,720
+The outer loop will cycle though each
+row and then in the row that's currently
+
+14
+00:00:48,720 --> 00:00:53,420
+being iterated over, the inner
+loop will iterate over each cell.
+
+15
+00:00:53,420 --> 00:00:57,240
+It can help to use easy to recognize,
+distinct variable names for
+
+16
+00:00:57,240 --> 00:00:58,912
+your outer and inner loops.
+
+17
+00:00:58,912 --> 00:01:02,472
+I usually like to use variable
+names like row or column, or
+
+18
+00:01:02,472 --> 00:01:06,905
+in this case I used r and c, since this
+will help you visualize the rows and
+
+19
+00:01:06,905 --> 00:01:09,830
+columns of the grid that
+your code represents.
+1
+00:00:00,000 --> 00:00:10,000
+[BLANK_AUDIO]
+1
+00:00:00,000 --> 00:00:10,000
+[BLANK_AUDIO]
+1
+00:00:00,000 --> 00:00:08,530
+[BLANK_AUDIO]
+1
+00:00:00,560 --> 00:00:03,320
+All of this talk about arrays and
+donuts has got me hungry.
+
+2
+00:00:03,320 --> 00:00:06,226
+I think it's about time we wrapped
+up this course so we can eat.
+
+3
+00:00:06,226 --> 00:00:08,732
+&gt;&gt; Not so fast,
+we still have one lesson left.
+
+4
+00:00:08,732 --> 00:00:11,110
+&gt;&gt; Right, I forgot.
+
+5
+00:00:11,110 --> 00:00:12,810
+&gt;&gt; In the final lesson of this course,
+
+6
+00:00:12,810 --> 00:00:16,195
+you'll be exploring the awesome
+world of objects in JavaScript.
+
+7
+00:00:16,195 --> 00:00:20,675
+Just as arrays have properties and
+methods, so to do other data types.
+
+8
+00:00:20,675 --> 00:00:23,695
+&gt;&gt; Aside from that, you can even
+create your own objects with their own
+
+9
+00:00:23,695 --> 00:00:26,675
+properties and
+methods to use throughout your programs.
+
+10
+00:00:26,675 --> 00:00:28,805
+Head on over to the final lesson,
+and we'll see you there.
+1
+00:00:00,560 --> 00:00:01,680
+Welcome back.
+
+2
+00:00:01,680 --> 00:00:03,740
+You've made it to the last
+lesson of this course.
+
+3
+00:00:03,740 --> 00:00:07,110
+And now it's finally time
+to talk about objects.
+
+4
+00:00:07,110 --> 00:00:10,610
+&gt;&gt; Objects are an incredibly
+powerful feature of JavaScript.
+
+5
+00:00:10,610 --> 00:00:13,140
+They allow us to wrap up
+pieces of related data and
+
+6
+00:00:13,140 --> 00:00:16,590
+functionality, into
+one single container.
+
+7
+00:00:16,590 --> 00:00:19,400
+If you remember back to our
+previous lesson on arrays,
+
+8
+00:00:19,400 --> 00:00:22,460
+arrays are a special kind
+of object in JavaScript.
+
+9
+00:00:22,460 --> 00:00:27,130
+Arrays have properties like length and
+methods like reverse, sort, push, and
+
+10
+00:00:27,130 --> 00:00:28,000
+pop.
+
+11
+00:00:28,000 --> 00:00:31,610
+That make them useful for
+working with structured organized data.
+
+12
+00:00:31,610 --> 00:00:34,470
+&gt;&gt; But
+objects are not just limited to arrays.
+
+13
+00:00:34,470 --> 00:00:38,170
+JavaScript comes with a whole set
+of other useful built-in objects.
+
+14
+00:00:38,170 --> 00:00:41,020
+Plus, you can even
+create your own objects.
+
+15
+00:00:41,020 --> 00:00:44,320
+For example, throughout this course,
+you're seeing code about Facebook
+
+16
+00:00:44,320 --> 00:00:50,560
+profiles, bank accounts, cats, crew
+members, a donut shop, and so much more.
+
+17
+00:00:50,560 --> 00:00:53,170
+Each of these things had data
+associated with them and
+
+18
+00:00:53,170 --> 00:00:56,950
+functions that we used to manipulate or
+operate on that data.
+
+19
+00:00:56,950 --> 00:01:00,570
+With objects, we can take this
+a step further by organizing or
+
+20
+00:01:00,570 --> 00:01:02,840
+encapsulating all of the data and
+
+21
+00:01:02,840 --> 00:01:06,530
+functionality associated with
+a particular thing inside an object.
+
+22
+00:01:07,600 --> 00:01:10,309
+&gt;&gt; For example,
+take this umbrella [SOUND].
+
+23
+00:01:10,309 --> 00:01:12,460
+I really like umbrellas.
+
+24
+00:01:12,460 --> 00:01:16,080
+And we could create this umbrella
+as an object in JavaScript.
+
+25
+00:01:16,080 --> 00:01:18,910
+In fact, we could take almost
+any real world object and
+
+26
+00:01:18,910 --> 00:01:21,450
+represent it as a JavaScript object.
+
+27
+00:01:21,450 --> 00:01:24,140
+&gt;&gt; Let's take a look at how we
+might write code to represent
+
+28
+00:01:24,140 --> 00:01:24,950
+Julia's umbrella.
+1
+00:00:00,350 --> 00:00:02,830
+If you we're writing code
+to control this umbrella,
+
+2
+00:00:02,830 --> 00:00:05,600
+you would first create an object
+to represent the umbrella.
+
+3
+00:00:05,600 --> 00:00:09,420
+One way to define an object
+is to create a variable and
+
+4
+00:00:09,420 --> 00:00:13,310
+assign it to a pair of empty
+curly braces like this.
+
+5
+00:00:13,310 --> 00:00:18,040
+You can verify that umbrella is
+an object by using the type of operator.
+
+6
+00:00:18,040 --> 00:00:22,870
+The type of operator will return
+a string that tells you the data type.
+
+7
+00:00:22,870 --> 00:00:26,350
+However, an empty object
+is not very interesting.
+
+8
+00:00:26,350 --> 00:00:28,890
+Objects have properties and
+things they can do.
+
+9
+00:00:28,890 --> 00:00:33,990
+To add this information, you can define
+key value pairs for each piece of data.
+
+10
+00:00:33,990 --> 00:00:37,530
+Here, we've defined a property
+key called color, and
+
+11
+00:00:37,530 --> 00:00:39,960
+it's value is pink,
+since it's a pink umbrella.
+
+12
+00:00:39,960 --> 00:00:42,939
+This umbrella also happens to be closed,
+so
+
+13
+00:00:42,939 --> 00:00:47,859
+you can add a property called isOpen and
+set its starting value to false.
+
+14
+00:00:47,859 --> 00:00:51,976
+Now you have an umbrella object,
+it's pink and it's closed.
+
+15
+00:00:51,976 --> 00:00:56,675
+Opening the umbrella is a task you
+want the umbrella to be able to do.
+
+16
+00:00:56,675 --> 00:01:01,305
+It's not a property which is an
+attribute that describes the umbrella.
+
+17
+00:01:01,305 --> 00:01:04,105
+Something the object can do is a method.
+
+18
+00:01:04,105 --> 00:01:07,565
+A method is just a function
+that's associated with an object.
+
+19
+00:01:07,565 --> 00:01:09,700
+You've actually seen methods before.
+
+20
+00:01:09,700 --> 00:01:12,940
+Back when you used push and
+pop with erase.
+
+21
+00:01:12,940 --> 00:01:17,220
+Push and pop are methods to add and
+remove elements from an array.
+
+22
+00:01:17,220 --> 00:01:19,546
+Here is a method that
+opens the umbrella.
+
+23
+00:01:19,546 --> 00:01:23,147
+[BLANK_AUDIO]
+
+24
+00:01:23,147 --> 00:01:26,200
+If you're a little confused right now,
+it's okay.
+
+25
+00:01:26,200 --> 00:01:29,150
+Objects can be tricky to wrap
+your head around at first.
+
+26
+00:01:29,150 --> 00:01:30,500
+But be patient.
+
+27
+00:01:30,500 --> 00:01:33,690
+We're going to go into more
+detail in how to create objects.
+
+28
+00:01:33,690 --> 00:01:37,240
+Define property, and methods, and
+use these objects in your code.
+1
+00:00:00,520 --> 00:00:04,470
+Up until this point, you've been working
+mostly with primitive data types.
+
+2
+00:00:04,470 --> 00:00:09,030
+This types have been strings, numbers,
+booleans, undefined, and null.
+
+3
+00:00:09,030 --> 00:00:12,640
+If you type the following code in
+the JavaScript console, predictably
+
+4
+00:00:12,640 --> 00:00:18,100
+the console will return string because
+hello, is a primitive string data type.
+
+5
+00:00:18,100 --> 00:00:19,610
+No surprises there.
+
+6
+00:00:19,610 --> 00:00:21,080
+But if you instead ask for
+
+7
+00:00:21,080 --> 00:00:25,750
+the type of this array,
+you'd expect it to display array, right?
+
+8
+00:00:25,750 --> 00:00:28,370
+Well instead it returns object.
+
+9
+00:00:28,370 --> 00:00:30,520
+So what is this mysterious object?
+
+10
+00:00:30,520 --> 00:00:33,180
+An object is a data
+structure in JavaScript
+
+11
+00:00:33,180 --> 00:00:36,300
+that lets you store any
+kind of data value.
+
+12
+00:00:36,300 --> 00:00:39,260
+And you can keep track
+of the data using a key.
+
+13
+00:00:39,260 --> 00:00:42,810
+Before we dive into the syntax of
+defining an object, let's think about
+
+14
+00:00:42,810 --> 00:00:46,080
+what information an object that
+represents a person might need.
+
+15
+00:00:47,230 --> 00:00:51,760
+A variable containing just
+the person's name is not enough.
+
+16
+00:00:51,760 --> 00:00:56,260
+A person also has an age,
+parents, siblings,
+
+17
+00:00:56,260 --> 00:00:59,590
+favorite colors, and the list goes on.
+
+18
+00:00:59,590 --> 00:01:04,190
+So instead of defining all the data
+about a person in isolated variables,
+
+19
+00:01:04,190 --> 00:01:06,530
+objects allow you to
+group this information.
+
+20
+00:01:06,530 --> 00:01:08,420
+Like the information shown here.
+
+21
+00:01:08,420 --> 00:01:10,730
+Into a meaningful structure.
+
+22
+00:01:10,730 --> 00:01:13,970
+Here is an object that's stored
+in a variable called sister.
+
+23
+00:01:13,970 --> 00:01:17,190
+And the object's data,
+information about my sister,
+
+24
+00:01:17,190 --> 00:01:20,860
+can be stored as a list of key
+value pairs inside curly braces.
+
+25
+00:01:20,860 --> 00:01:25,410
+You might be noticing that this code
+is a bit hard to read at first.
+
+26
+00:01:25,410 --> 00:01:28,030
+It's common to format objects with each
+
+27
+00:01:28,030 --> 00:01:32,190
+key value pair on its own
+line to improve readability.
+
+28
+00:01:32,190 --> 00:01:34,350
+Note that the syntax hasn't changed,
+
+29
+00:01:34,350 --> 00:01:38,160
+we just added a new line after
+each comma and indented each pair.
+1
+00:00:00,530 --> 00:00:03,840
+As you start creating objects, there
+are some naming conventions that you'll
+
+2
+00:00:03,840 --> 00:00:06,660
+want to follow when
+defining object properties.
+
+3
+00:00:06,660 --> 00:00:09,120
+Not following these conventions
+can lead to some sneaky bugs.
+
+4
+00:00:09,120 --> 00:00:13,210
+So I want to spend some time showing you
+some things that you'll want to avoid as
+
+5
+00:00:13,210 --> 00:00:16,580
+well as best practices for
+naming object properties.
+
+6
+00:00:16,580 --> 00:00:18,460
+Okay, so
+here I have a couple of examples and
+
+7
+00:00:18,460 --> 00:00:21,270
+let's just walk through through
+each one of these one by one.
+
+8
+00:00:21,270 --> 00:00:24,610
+In the first example I've got
+an object called person, and
+
+9
+00:00:24,610 --> 00:00:26,710
+it's got some properties that
+are used to describe the person.
+
+10
+00:00:26,710 --> 00:00:28,700
+Actually this person is my dad [LAUGH].
+
+11
+00:00:28,700 --> 00:00:33,500
+So his name's John, he's 55,
+and he's got three children.
+
+12
+00:00:33,500 --> 00:00:36,330
+Myself, my twin brother Jarrod,
+and my sister Alexis.
+
+13
+00:00:36,330 --> 00:00:39,750
+So anyways, there's two things
+I want to point out here.
+
+14
+00:00:39,750 --> 00:00:42,950
+First, I'm using quotes
+around the property names.
+
+15
+00:00:42,950 --> 00:00:46,360
+Now quotes are perfectly valid but
+they're not required.
+
+16
+00:00:46,360 --> 00:00:49,860
+However, sometimes when you use
+quotes around property names
+
+17
+00:00:49,860 --> 00:00:52,320
+it can mass some potential problems.
+
+18
+00:00:52,320 --> 00:00:56,380
+For example, I'm going to copy this
+code over to our console and let's try
+
+19
+00:00:56,380 --> 00:00:59,820
+accessing some of these properties so
+I can show you what I mean.
+
+20
+00:00:59,820 --> 00:01:01,530
+So we'll copy this and
+paste it over here.
+
+21
+00:01:02,890 --> 00:01:06,520
+So I've got my person object copied over
+to the console and let's give it a go.
+
+22
+00:01:06,520 --> 00:01:08,800
+Remember we've got two different
+ways to access properties.
+
+23
+00:01:08,800 --> 00:01:11,040
+We can use bracket notation or
+dot notation.
+
+24
+00:01:11,040 --> 00:01:14,160
+So let's just start with
+bracket notation first.
+
+25
+00:01:14,160 --> 00:01:19,080
+So let me try person and let's try
+to get the name of this person.
+
+26
+00:01:19,080 --> 00:01:21,510
+To do that it turns back John.
+
+27
+00:01:21,510 --> 00:01:22,300
+Okay, so that works.
+
+28
+00:01:22,300 --> 00:01:23,732
+That's not a problem.
+
+29
+00:01:23,732 --> 00:01:29,170
+And let's try doing one of the children,
+the first child which is me.
+
+30
+00:01:29,170 --> 00:01:31,648
+And awesome so it tuns back James.
+
+31
+00:01:31,648 --> 00:01:34,734
+But now let's trying doing
+it with dot notation and
+
+32
+00:01:34,734 --> 00:01:37,530
+this is where you're
+going to see the problem.
+
+33
+00:01:37,530 --> 00:01:41,260
+So we do dot name, no that's still okay.
+
+34
+00:01:41,260 --> 00:01:42,365
+But what about first child?
+
+35
+00:01:42,365 --> 00:01:45,980
+Uh-oh, we've got a syntax error.
+
+36
+00:01:45,980 --> 00:01:49,350
+It doesn't seem to like our
+1stChild using dot notation.
+
+37
+00:01:49,350 --> 00:01:51,820
+So, this is, basically,
+the second thing I want to point out.
+
+38
+00:01:51,820 --> 00:01:56,430
+Don't use numbers as the first
+character in your property names.
+
+39
+00:01:56,430 --> 00:01:58,740
+Technically, it works,
+if you're using bracket notation, but
+
+40
+00:01:58,740 --> 00:02:01,550
+it's going to limit you when
+you're using dot notation and
+
+41
+00:02:01,550 --> 00:02:03,720
+it's just bad practice in general,
+so avoid it.
+
+42
+00:02:04,780 --> 00:02:07,570
+And just to show you what I mean by
+quotes sometimes masking potential
+
+43
+00:02:07,570 --> 00:02:11,890
+problems, if we drop the quotes which
+I've done now in this example, and
+
+44
+00:02:11,890 --> 00:02:12,750
+we copy and
+
+45
+00:02:12,750 --> 00:02:15,980
+paste it back over to the console,
+we're going to get an error back.
+
+46
+00:02:15,980 --> 00:02:19,570
+So yes, so sometimes quotes
+can mask potential problems
+
+47
+00:02:19,570 --> 00:02:21,570
+when you're naming object properties.
+
+48
+00:02:21,570 --> 00:02:26,100
+So the moral here is
+that don't use numbers to
+
+49
+00:02:26,100 --> 00:02:28,430
+start your object property names.
+
+50
+00:02:28,430 --> 00:02:32,000
+And really for this example, for
+first, second and third child.
+
+51
+00:02:32,000 --> 00:02:35,740
+To do this right we should just
+change this over to being an array
+
+52
+00:02:35,740 --> 00:02:36,610
+that holds the children.
+
+53
+00:02:37,880 --> 00:02:39,232
+Yeah, that's a lot better.
+
+54
+00:02:39,232 --> 00:02:41,210
+All right, so
+let's move on to this next example.
+
+55
+00:02:41,210 --> 00:02:43,790
+Based on the first example you might
+already see where the problems
+
+56
+00:02:43,790 --> 00:02:44,810
+are going to be.
+
+57
+00:02:44,810 --> 00:02:46,900
+But let me go ahead and
+point them out anyway.
+
+58
+00:02:46,900 --> 00:02:49,640
+So again, we're using quotes for
+property names and
+
+59
+00:02:49,640 --> 00:02:52,820
+it's going to let us get away with
+some things that normally don't fly.
+
+60
+00:02:52,820 --> 00:02:57,900
+The first is using spaces, and
+the second is using hyphens.
+
+61
+00:02:57,900 --> 00:03:00,060
+You should definitely avoid
+doing either of these things for
+
+62
+00:03:00,060 --> 00:03:03,500
+the same reasons as using
+a number as the first character.
+
+63
+00:03:03,500 --> 00:03:06,604
+Neither of these will work
+when you use dot notation.
+
+64
+00:03:06,604 --> 00:03:09,571
+So if we copy this over to
+the JavaScript console and
+
+65
+00:03:09,571 --> 00:03:11,643
+give it a try we'll see what I mean.
+
+66
+00:03:11,643 --> 00:03:19,190
+So we'll say garage.fire truck, and
+yeah so there is a syntax error here.
+
+67
+00:03:19,190 --> 00:03:20,630
+And then the same thing goes for
+
+68
+00:03:20,630 --> 00:03:25,180
+our hyphen, if we say race-car,
+again another syntax error.
+
+69
+00:03:25,180 --> 00:03:28,015
+Now the reason I've got this
+is a different example,
+
+70
+00:03:28,015 --> 00:03:33,510
+is because both of these properties are
+examples of multi-word property names.
+
+71
+00:03:33,510 --> 00:03:37,130
+If you want to use multi-word
+properties Instead of using a space or
+
+72
+00:03:37,130 --> 00:03:40,460
+a hyphen the preferred method
+is using camel casing.
+
+73
+00:03:40,460 --> 00:03:42,360
+Now camel casing is pretty simple.
+
+74
+00:03:42,360 --> 00:03:45,100
+You just remove the spaces
+between multiple words, so
+
+75
+00:03:45,100 --> 00:03:47,516
+we'll do that here, or
+in this case a hyphen.
+
+76
+00:03:47,516 --> 00:03:52,000
+And then you want to upper case the
+first letter in the rest of the words
+
+77
+00:03:52,000 --> 00:03:53,550
+throughout the property name.
+
+78
+00:03:54,590 --> 00:03:58,280
+So to recap property names can
+be any combination of upper and
+
+79
+00:03:58,280 --> 00:04:02,060
+lower case letters as well as numbers
+just as long as numbers aren't
+
+80
+00:04:02,060 --> 00:04:03,760
+the beginning of your property name.
+
+81
+00:04:03,760 --> 00:04:06,430
+Like you can put a number
+anywhere in here and
+
+82
+00:04:06,430 --> 00:04:09,570
+that's going to be fine,
+just not at the beginning.
+
+83
+00:04:09,570 --> 00:04:11,555
+Also using camel casing for
+
+84
+00:04:11,555 --> 00:04:16,060
+multi-word properties is going to be
+better than using spaces or hyphens.
+
+85
+00:04:16,060 --> 00:04:17,200
+Again, you can use spaces or
+
+86
+00:04:17,200 --> 00:04:20,579
+hyphens when you're using quotes
+around your property names.
+
+87
+00:04:20,579 --> 00:04:23,750
+But then it's going to break on you
+when you try to use dot notation
+
+88
+00:04:23,750 --> 00:04:24,970
+to access those properties.
+
+89
+00:04:24,970 --> 00:04:27,690
+So rather than doing that,
+just avoid that completely and
+
+90
+00:04:27,690 --> 00:04:30,870
+use camel casing that's
+going to be your best bet.
+
+91
+00:04:30,870 --> 00:04:33,980
+Finally, one other thing worth
+mentioning is all of these rules
+
+92
+00:04:33,980 --> 00:04:36,600
+also apply to just
+normal variable names.
+
+93
+00:04:36,600 --> 00:04:39,790
+So if your variable name is good,
+then it is probably also good for
+
+94
+00:04:39,790 --> 00:04:40,460
+a property name.
+1
+00:00:00,000 --> 00:00:02,509
+Congratulations.
+
+2
+00:00:02,509 --> 00:00:06,195
+&gt;&gt; Congratulations on completing this
+introductory course on JavaScript.
+
+3
+00:00:06,195 --> 00:00:09,149
+From defining your first variables,
+to writing functions,
+
+4
+00:00:09,149 --> 00:00:12,055
+to creating your very own objects,
+you've come a long way.
+
+5
+00:00:12,055 --> 00:00:13,369
+&gt;&gt; In just a short amount of time,
+
+6
+00:00:13,369 --> 00:00:17,012
+you've built up a basic understanding of
+the JavaScript programming language, and
+
+7
+00:00:17,012 --> 00:00:19,750
+how it works
+&gt;&gt; If this is your first time learning
+
+8
+00:00:19,750 --> 00:00:22,270
+a programming language, you should
+be incredibly proud of yourself.
+
+9
+00:00:22,270 --> 00:00:24,117
+&gt;&gt; But the fun doesn't stop here.
+
+10
+00:00:24,117 --> 00:00:26,359
+Now, it's time for
+you to venture forth, and
+
+11
+00:00:26,359 --> 00:00:29,190
+use your new JavaScript powers
+to see what you can create.
+
+12
+00:00:29,190 --> 00:00:32,827
+We also hope you'll consider taking our
+follow-up course if you're interested in
+
+13
+00:00:32,827 --> 00:00:36,222
+learning how to use JavaScript to create
+interactive experiences on the web.
+
+14
+00:00:36,222 --> 00:00:37,350
+&gt;&gt; See you in the next course.
+
+15
+00:00:37,350 --> 00:00:47,350
+[MUSIC]
+1
+00:00:00,330 --> 00:00:02,969
+Before we move on to
+the JavaScript language itself,
+
+2
+00:00:02,969 --> 00:00:05,920
+how about we recap some of
+the things you just learned?
+
+3
+00:00:05,920 --> 00:00:09,700
+First, you learned that all major
+browsers come with built-in JavaScript
+
+4
+00:00:09,700 --> 00:00:10,241
+engines.
+
+5
+00:00:10,241 --> 00:00:13,626
+This allows browsers to run and
+execute JavaScript code.
+
+6
+00:00:13,626 --> 00:00:16,650
+&gt;&gt; Next, you got practice
+using the JavaScript console.
+
+7
+00:00:16,650 --> 00:00:18,950
+The JavaScript console allows
+you to print strings and
+
+8
+00:00:18,950 --> 00:00:22,980
+execute lines of JavaScript code on
+the fly, right inside of your browser.
+
+9
+00:00:22,980 --> 00:00:26,710
+&gt;&gt; And finally, you wrap up with some
+exercises where you use JavaScript
+
+10
+00:00:26,710 --> 00:00:29,930
+to add styles and
+animations to a web page.
+
+11
+00:00:29,930 --> 00:00:32,520
+&gt;&gt; Hopefully, you're beginning
+to see the power of JavaScript.
+
+12
+00:00:32,520 --> 00:00:35,140
+And you're ready to dive in and
+explore the language.
+
+13
+00:00:35,140 --> 00:00:36,130
+See you in the next lesson.
+1
+00:00:00,670 --> 00:00:02,020
+Data is everywhere.
+
+2
+00:00:02,020 --> 00:00:04,100
+It's the grade you made
+on your first math test,
+
+3
+00:00:04,100 --> 00:00:06,140
+it's the conversation you
+have with a loved one and
+
+4
+00:00:06,140 --> 00:00:08,610
+it's the decision you made to
+sit down and watch this video.
+
+5
+00:00:09,860 --> 00:00:11,910
+All of these things can
+be represented as data.
+
+6
+00:00:13,040 --> 00:00:16,730
+Data's important because it helps us
+understand the world, recognize trends,
+
+7
+00:00:16,730 --> 00:00:19,960
+make educated guesses and
+inform our future decisions.
+
+8
+00:00:19,960 --> 00:00:22,060
+&gt;&gt; This is no different in programming.
+
+9
+00:00:22,060 --> 00:00:25,781
+Data and data types are the building
+blocks of any programming language
+
+10
+00:00:25,781 --> 00:00:28,200
+because they help us
+organize information and
+
+11
+00:00:28,200 --> 00:00:30,195
+determine how our programs will run.
+
+12
+00:00:30,195 --> 00:00:33,257
+&gt;&gt; When you look on your Facebook
+profile, what do you see?
+
+13
+00:00:33,257 --> 00:00:36,857
+Your name, the number of friends you
+have, the date of your last post,
+
+14
+00:00:36,857 --> 00:00:41,810
+list of status updates and whether you
+liked the comment your friend just made.
+
+15
+00:00:41,810 --> 00:00:44,590
+All this information is being gathered,
+calculated and
+
+16
+00:00:44,590 --> 00:00:47,860
+presented to your friends and
+family visiting your profile.
+
+17
+00:00:47,860 --> 00:00:50,730
+&gt;&gt; And when you look at your
+bank account, what do you see?
+
+18
+00:00:50,730 --> 00:00:54,900
+An account number, an account balance,
+dates of each transaction and
+
+19
+00:00:54,900 --> 00:00:57,730
+the name of the company that
+you made a purchase from.
+
+20
+00:00:57,730 --> 00:01:01,150
+It's important to be aware of what
+types of data you're using and
+
+21
+00:01:01,150 --> 00:01:02,520
+when it's appropriate to use each type.
+
+22
+00:01:03,540 --> 00:01:06,410
+&gt;&gt; In this lesson, we'll start
+by learning how to define and
+
+23
+00:01:06,410 --> 00:01:09,390
+manipulate the primitive
+data types of JavaScript.
+
+24
+00:01:09,390 --> 00:01:14,010
+Numbers, strings, Booleans,
+undefined and null.
+
+25
+00:01:14,010 --> 00:01:17,160
+Once you're familiar with these data
+types, you'll see how you can store data
+
+26
+00:01:17,160 --> 00:01:20,840
+into variables so you can reuse and
+manipulate data throughout your code.
+1
+00:00:00,310 --> 00:00:03,140
+A programming language is used for
+a computer to understand.
+
+2
+00:00:03,140 --> 00:00:06,770
+But as your code gets more and more
+complex, it can get harder and harder
+
+3
+00:00:06,770 --> 00:00:10,800
+for you and other humans to read your
+code and to understand what it does.
+
+4
+00:00:10,800 --> 00:00:14,530
+Comments are often used by developers to
+help clarify the meaning of your code
+
+5
+00:00:14,530 --> 00:00:16,290
+in a human-friendly language.
+
+6
+00:00:16,290 --> 00:00:20,440
+In JavaScript, a comment is any
+text after a double forward slash
+
+7
+00:00:20,440 --> 00:00:23,580
+if you want to write comments
+one line at a time like this, or
+
+8
+00:00:23,580 --> 00:00:25,950
+any text in between a slash star and
+
+9
+00:00:25,950 --> 00:00:30,040
+star slash if you know you're going
+to be writing a block of comments.
+
+10
+00:00:30,040 --> 00:00:32,990
+Comments are not executed by
+the JavaScript interpreter, so
+
+11
+00:00:32,990 --> 00:00:35,820
+you could pretty much say
+anything you want in the comment.
+
+12
+00:00:35,820 --> 00:00:38,870
+But usually you try to make them
+a little more useful than this.
+
+13
+00:00:38,870 --> 00:00:41,780
+For example, here's some code
+I wrote a while ago, and
+
+14
+00:00:41,780 --> 00:00:44,870
+it's not really obvious to me
+what I was doing with this code.
+
+15
+00:00:44,870 --> 00:00:47,550
+There's seems to be a function,
+a for loop,
+
+16
+00:00:47,550 --> 00:00:50,760
+some variables with really
+bad variable names.
+
+17
+00:00:50,760 --> 00:00:53,600
+Don't worry if you don't know
+what any of these means just yet.
+
+18
+00:00:53,600 --> 00:00:58,020
+What you need to know right now is
+that if I had used comments like this,
+
+19
+00:00:58,020 --> 00:01:00,175
+I would, and you probably would too,
+
+20
+00:01:00,175 --> 00:01:04,319
+have an easier time remembering
+what this code was originally for.
+
+21
+00:01:04,319 --> 00:01:07,780
+See, now I can tell that this function
+reverses the order of characters in
+
+22
+00:01:07,780 --> 00:01:12,600
+a word, and it does this by looping
+over the characters in reverse order and
+
+23
+00:01:12,600 --> 00:01:14,380
+adding them to a new word.
+
+24
+00:01:14,380 --> 00:01:18,500
+Some of the quizzes in this course might
+include comments that give you hints or
+
+25
+00:01:18,500 --> 00:01:20,270
+instructions to complete a quiz.
+
+26
+00:01:20,270 --> 00:01:22,830
+We encourage you to use
+comments in your own code
+
+27
+00:01:22,830 --> 00:01:26,390
+to explain any non-obvious code
+you write in your quizzes.
+
+28
+00:01:26,390 --> 00:01:28,930
+Not only will you develop
+good coding habits, but
+
+29
+00:01:28,930 --> 00:01:31,700
+you will also improve
+the readability of your code
+
+30
+00:01:31,700 --> 00:01:34,270
+if you ever need to refer back
+to these quizzes for review.
+
+31
+00:01:34,270 --> 00:01:38,030
+All right, now it's time to
+go on to your first quiz.
+
+32
+00:01:38,030 --> 00:01:38,410
+Good luck.
